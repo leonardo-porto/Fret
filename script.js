@@ -1,6 +1,40 @@
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
-let input = document.getElementById('input').value
+let botao = document.getElementById('botao')
+
+//****************************************************************************************/
+
+botao.onclick = function () {
+
+    let input = document.getElementById('input').value
+
+    if (input == 'c' || input == 'C'){
+
+        cMaior()
+
+
+    } else if (input == 'd' || input == 'D'){
+
+        dMaior()
+
+    } else if (input == 'e' || input == 'E'){
+
+        eMaior()
+
+    } else if (input == 'am penta shape 1' || input == 'penta am shape 1'){
+
+        pentaAmShape1()
+        
+    }
+
+    
+
+
+
+    
+}
+
+
 
 
 
@@ -183,3 +217,148 @@ mostrar.onclick = function mostrar() {
     }
 }
 
+function cMaior() {
+
+    apagar()
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = 'greenyellow'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'greenyellow'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'greenyellow'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'greenyellow'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'greenyellow'
+    
+}
+
+function dMaior() {
+
+    apagar()
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'greenyellow'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'greenyellow'
+
+    corda2[3].style.display = 'block'
+    corda2[3].style.backgroundColor = 'greenyellow'
+
+    corda1[2].style.display = 'block'
+    corda1[2].style.backgroundColor = 'greenyellow'
+    
+}
+
+function eMaior() {
+
+    apagar()
+
+    corda6[0].style.display = 'block'
+    corda6[0].style.backgroundColor = 'greenyellow'
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'greenyellow'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'greenyellow'
+
+    corda3[1].style.display = 'block'
+    corda3[1].style.backgroundColor = 'greenyellow'
+
+    corda2[0].style.display = 'block'
+    corda2[0].style.backgroundColor = 'greenyellow'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'greenyellow'
+    
+}
+
+function pentaAmShape1() {
+
+    apagar()
+
+    corda6[5].style.display = 'block'
+    corda6[5].style.backgroundColor = 'greenyellow'
+
+    corda6[8].style.display = 'block'
+    corda6[8].style.backgroundColor = 'greenyellow'
+
+    corda5[5].style.display = 'block'
+    corda5[5].style.backgroundColor = 'greenyellow'
+
+    corda5[7].style.display = 'block'
+    corda5[7].style.backgroundColor = 'greenyellow'
+
+    
+
+    corda4[5].style.display = 'block'
+    corda4[5].style.backgroundColor = 'greenyellow'
+
+    corda4[7].style.display = 'block'
+    corda4[7].style.backgroundColor = 'greenyellow'
+
+    corda3[5].style.display = 'block'
+    corda3[5].style.backgroundColor = 'greenyellow'
+
+    corda3[7].style.display = 'block'
+    corda3[7].style.backgroundColor = 'greenyellow'
+    
+    corda2[5].style.display = 'block'
+    corda2[5].style.backgroundColor = 'greenyellow'
+
+    corda2[8].style.display = 'block'
+    corda2[8].style.backgroundColor = 'greenyellow'
+
+    corda1[5].style.display = 'block'
+    corda1[5].style.backgroundColor = 'greenyellow'
+
+    corda1[8].style.display = 'block'
+    corda1[8].style.backgroundColor = 'greenyellow'
+}
+
+function apagar() {
+
+    for (i = 0; i < 13; i++){
+
+        corda1[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda2[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda3[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda4[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda5[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda6[i].style.display = 'none'
+
+    }
+    
+}
