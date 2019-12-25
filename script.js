@@ -1,3 +1,10 @@
+let clear = document.getElementById('limpar')
+let mostrar = document.getElementById('mostrar')
+let input = document.getElementById('input').value
+
+
+
+
 let corda1_casa0 = document.getElementById('corda1_casa0')
 let corda1_casa1 = document.getElementById('corda1_casa1')
 let corda1_casa2 = document.getElementById('corda1_casa2')
@@ -91,35 +98,88 @@ let corda4 = [corda4_casa0, corda4_casa1, corda4_casa2, corda4_casa3, corda4_cas
 let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_casa4, corda5_casa5, corda5_casa6, corda5_casa7, corda5_casa8, corda5_casa9, corda5_casa10, corda5_casa11, corda5_casa12]
 let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12]
 
-function limpar() {
 
-    for (i in corda1){
+
+
+
+clear.onclick = function limpar() {
+    
+    
+    for (i = 0; i < 13; i++){
 
         corda1[i].style.display = 'none'
+
     }
-    for (i in corda2){
+
+    for (i = 0; i < 13; i++){
 
         corda2[i].style.display = 'none'
+
     }
-    for (i in corda3){
+
+    for (i = 0; i < 13; i++){
 
         corda3[i].style.display = 'none'
+
     }
-    for (i in corda4){
+
+    for (i = 0; i < 13; i++){
 
         corda4[i].style.display = 'none'
+
     }
-    for (i in corda5){
+
+    for (i = 0; i < 13; i++){
 
         corda5[i].style.display = 'none'
+
     }
-    for (i in corda6){
+
+    for (i = 0; i < 13; i++){
 
         corda6[i].style.display = 'none'
+
     }
-    
 }
 
 
+mostrar.onclick = function mostrar() {
+    
+    
+    for (i = 0; i < 13; i++){
 
-limpar()
+        corda1[i].style.display = 'block'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda2[i].style.display = 'block'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda3[i].style.display = 'block'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda4[i].style.display = 'block'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda5[i].style.display = 'block'
+
+    }
+
+    for (i = 0; i < 13; i++){
+
+        corda6[i].style.display = 'block'
+
+    }
+}
+
