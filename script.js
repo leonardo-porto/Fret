@@ -1,0 +1,125 @@
+let corda1_casa0 = document.getElementById('corda1_casa0')
+let corda1_casa1 = document.getElementById('corda1_casa1')
+let corda1_casa2 = document.getElementById('corda1_casa2')
+let corda1_casa3 = document.getElementById('corda1_casa3')
+let corda1_casa4 = document.getElementById('corda1_casa4')
+let corda1_casa5 = document.getElementById('corda1_casa5')
+let corda1_casa6 = document.getElementById('corda1_casa6')
+let corda1_casa7 = document.getElementById('corda1_casa7')
+let corda1_casa8 = document.getElementById('corda1_casa8')
+let corda1_casa9 = document.getElementById('corda1_casa9')
+let corda1_casa10 = document.getElementById('corda1_casa10')
+let corda1_casa11 = document.getElementById('corda1_casa11')
+let corda1_casa12 = document.getElementById('corda1_casa12')
+//****************************************************************/
+let corda2_casa0 = document.getElementById('corda2_casa0')
+let corda2_casa1 = document.getElementById('corda2_casa1')
+let corda2_casa2 = document.getElementById('corda2_casa2')
+let corda2_casa3 = document.getElementById('corda2_casa3')
+let corda2_casa4 = document.getElementById('corda2_casa4')
+let corda2_casa5 = document.getElementById('corda2_casa5')
+let corda2_casa6 = document.getElementById('corda2_casa6')
+let corda2_casa7 = document.getElementById('corda2_casa7')
+let corda2_casa8 = document.getElementById('corda2_casa8')
+let corda2_casa9 = document.getElementById('corda2_casa9')
+let corda2_casa10 = document.getElementById('corda2_casa10')
+let corda2_casa11 = document.getElementById('corda2_casa11')
+let corda2_casa12 = document.getElementById('corda2_casa12')
+//****************************************************************/
+let corda3_casa0 = document.getElementById('corda3_casa0')
+let corda3_casa1 = document.getElementById('corda3_casa1')
+let corda3_casa2 = document.getElementById('corda3_casa2')
+let corda3_casa3 = document.getElementById('corda3_casa3')
+let corda3_casa4 = document.getElementById('corda3_casa4')
+let corda3_casa5 = document.getElementById('corda3_casa5')
+let corda3_casa6 = document.getElementById('corda3_casa6')
+let corda3_casa7 = document.getElementById('corda3_casa7')
+let corda3_casa8 = document.getElementById('corda3_casa8')
+let corda3_casa9 = document.getElementById('corda3_casa9')
+let corda3_casa10 = document.getElementById('corda3_casa10')
+let corda3_casa11 = document.getElementById('corda3_casa11')
+let corda3_casa12 = document.getElementById('corda3_casa12')
+//****************************************************************/
+let corda4_casa0 = document.getElementById('corda4_casa0')
+let corda4_casa1 = document.getElementById('corda4_casa1')
+let corda4_casa2 = document.getElementById('corda4_casa2')
+let corda4_casa3 = document.getElementById('corda4_casa3')
+let corda4_casa4 = document.getElementById('corda4_casa4')
+let corda4_casa5 = document.getElementById('corda4_casa5')
+let corda4_casa6 = document.getElementById('corda4_casa6')
+let corda4_casa7 = document.getElementById('corda4_casa7')
+let corda4_casa8 = document.getElementById('corda4_casa8')
+let corda4_casa9 = document.getElementById('corda4_casa9')
+let corda4_casa10 = document.getElementById('corda4_casa10')
+let corda4_casa11 = document.getElementById('corda4_casa11')
+let corda4_casa12 = document.getElementById('corda4_casa12')
+//****************************************************************/
+let corda5_casa0 = document.getElementById('corda5_casa0')
+let corda5_casa1 = document.getElementById('corda5_casa1')
+let corda5_casa2 = document.getElementById('corda5_casa2')
+let corda5_casa3 = document.getElementById('corda5_casa3')
+let corda5_casa4 = document.getElementById('corda5_casa4')
+let corda5_casa5 = document.getElementById('corda5_casa5')
+let corda5_casa6 = document.getElementById('corda5_casa6')
+let corda5_casa7 = document.getElementById('corda5_casa7')
+let corda5_casa8 = document.getElementById('corda5_casa8')
+let corda5_casa9 = document.getElementById('corda5_casa9')
+let corda5_casa10 = document.getElementById('corda5_casa10')
+let corda5_casa11 = document.getElementById('corda5_casa11')
+let corda5_casa12 = document.getElementById('corda5_casa12')
+//****************************************************************/
+let corda6_casa0 = document.getElementById('corda6_casa0')
+let corda6_casa1 = document.getElementById('corda6_casa1')
+let corda6_casa2 = document.getElementById('corda6_casa2')
+let corda6_casa3 = document.getElementById('corda6_casa3')
+let corda6_casa4 = document.getElementById('corda6_casa4')
+let corda6_casa5 = document.getElementById('corda6_casa5')
+let corda6_casa6 = document.getElementById('corda6_casa6')
+let corda6_casa7 = document.getElementById('corda6_casa7')
+let corda6_casa8 = document.getElementById('corda6_casa8')
+let corda6_casa9 = document.getElementById('corda6_casa9')
+let corda6_casa10 = document.getElementById('corda6_casa10')
+let corda6_casa11 = document.getElementById('corda6_casa11')
+let corda6_casa12 = document.getElementById('corda6_casa12')
+//****************************************************************/
+
+
+let corda1 = [corda1_casa0, corda1_casa1, corda1_casa2, corda1_casa3, corda1_casa4, corda1_casa5, corda1_casa6, corda1_casa7, corda1_casa8, corda1_casa9, corda1_casa10, corda1_casa11, corda1_casa12]
+let corda2 = [corda2_casa0, corda2_casa1, corda2_casa2, corda2_casa3, corda2_casa4, corda2_casa5, corda2_casa6, corda2_casa7, corda2_casa8, corda2_casa9, corda2_casa10, corda2_casa11, corda2_casa12]
+let corda3 = [corda3_casa0, corda3_casa1, corda3_casa2, corda3_casa3, corda3_casa4, corda3_casa5, corda3_casa6, corda3_casa7, corda3_casa8, corda3_casa9, corda3_casa10, corda3_casa11, corda3_casa12]
+let corda4 = [corda4_casa0, corda4_casa1, corda4_casa2, corda4_casa3, corda4_casa4, corda4_casa5, corda4_casa6, corda4_casa7, corda4_casa8, corda4_casa9, corda4_casa10, corda4_casa11, corda4_casa12]
+let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_casa4, corda5_casa5, corda5_casa6, corda5_casa7, corda5_casa8, corda5_casa9, corda5_casa10, corda5_casa11, corda5_casa12]
+let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12]
+
+function limpar() {
+
+    for (i in corda1){
+
+        corda1[i].style.display = 'none'
+    }
+    for (i in corda2){
+
+        corda2[i].style.display = 'none'
+    }
+    for (i in corda3){
+
+        corda3[i].style.display = 'none'
+    }
+    for (i in corda4){
+
+        corda4[i].style.display = 'none'
+    }
+    for (i in corda5){
+
+        corda5[i].style.display = 'none'
+    }
+    for (i in corda6){
+
+        corda6[i].style.display = 'none'
+    }
+    
+}
+
+
+
+limpar()
