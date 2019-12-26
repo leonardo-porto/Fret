@@ -41,7 +41,20 @@ botao.onclick = function () {
 
         bMaior()
         
+    } else if (input == 'c7' || input == 'C7'){
+
+        c7()
+        
+    } else if (input == 'd7' || input == 'D7'){
+
+        d7()
+        
+    } else if (input == 'e7' || input == 'E7'){
+
+        e7()
+        
     }
+
 
     
 
@@ -227,7 +240,7 @@ mostrar.onclick = function mostrar() {
 
     }
 }
-
+//************************************************************************************************** */
 function cMaior() {
 
     apagar()
@@ -249,6 +262,30 @@ function cMaior() {
     
 }
 
+//************************************************************************************************** */
+function c7() {
+
+    apagar()
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = 'greenyellow'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'greenyellow'
+
+    corda3[3].style.display = 'block'
+    corda3[3].style.backgroundColor = 'greenyellow'
+    corda3[3].innerHTML = 'Bb'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'greenyellow'
+
+    
+    
+}
+
+//********************************************************************************************** */
+
 function dMaior() {
 
     apagar()
@@ -261,6 +298,26 @@ function dMaior() {
 
     corda2[3].style.display = 'block'
     corda2[3].style.backgroundColor = 'greenyellow'
+
+    corda1[2].style.display = 'block'
+    corda1[2].style.backgroundColor = 'greenyellow'
+    
+}
+
+//*************************************************************************************** */
+
+function d7() {
+
+    apagar()
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'greenyellow'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'greenyellow'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'greenyellow'
 
     corda1[2].style.display = 'block'
     corda1[2].style.backgroundColor = 'greenyellow'
@@ -285,6 +342,31 @@ function eMaior() {
 
     corda2[0].style.display = 'block'
     corda2[0].style.backgroundColor = 'greenyellow'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'greenyellow'
+    
+}
+
+//************************************************************************************** */
+function e7() {
+
+    apagar()
+
+    corda6[0].style.display = 'block'
+    corda6[0].style.backgroundColor = 'greenyellow'
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'greenyellow'
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'greenyellow'
+
+    corda3[1].style.display = 'block'
+    corda3[1].style.backgroundColor = 'greenyellow'
+
+    corda2[3].style.display = 'block'
+    corda2[3].style.backgroundColor = 'greenyellow'
 
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
