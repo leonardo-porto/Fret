@@ -3,6 +3,14 @@
     margin: 40px;
 }
 
+h1{
+
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
 body{
 
     background-color: whitesmoke;
@@ -1310,3 +1318,86 @@ body{
     left: 1020px;
 }
 
+#c {
+
+    background-color: red;
+    font-size: 40px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    top: 400px;
+    left: 70px;
+    font-weight: bold;
+}
+
+#c:hover{
+
+    cursor: pointer;
+}
+
+#g:hover{
+
+    cursor: pointer;
+}
+
+#am:hover{
+
+    cursor: pointer;
+}
+
+#f:hover{
+
+    cursor: pointer;
+}
+
+#g {
+
+    background-color: rgb(27, 116, 199);
+    font-size: 40px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    top: 400px;
+    left: 190px;
+    font-weight: bold;
+}
+
+#am {
+
+    background-color: rgb(25, 9, 243);
+    font-size: 40px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    top: 400px;
+    left: 310px;
+    font-weight: bold;
+}
+
+#f {
+
+    background-color: rgb(0, 255, 13);
+    font-size: 40px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    top: 400px;
+    left: 430px;
+    font-weight: bold;
+}

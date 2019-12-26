@@ -1,3 +1,107 @@
+let c = document.getElementById('c')
+let g = document.getElementById('g')
+let am = document.getElementById('am')
+let f = document.getElementById('f')
+
+f.onclick = function () {
+
+    apagar()
+
+    corda6[1].style.display = 'block'
+    corda6[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda4[3].style.display = 'block'
+    corda4[3].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda1[1].style.display = 'block'
+    corda1[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+
+
+}
+
+am.onclick = function () {
+
+    apagar()
+
+    corda5[0].style.display = 'block'
+    corda5[0].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'rgb(25, 9, 243)'
+
+
+}
+
+g.onclick = function () {
+
+    apagar()
+
+    corda6[3].style.display = 'block'
+    corda6[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda2[3].style.display = 'block'
+    corda2[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda1[3].style.display = 'block'
+    corda1[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+
+}
+
+c.onclick = function () {
+
+
+
+    apagar()
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = 'red'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'red'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'red'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'red'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'red'
+
+
+
+
+}
+
 //******************************************************************************************************* */
 let corda1_casa0 = document.getElementById('corda1_casa0')
 let corda1_casa1 = document.getElementById('corda1_casa1')
@@ -94,3 +198,144 @@ let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_cas
 
 //******************************************************************************************************/
 
+function apagar() {
+
+
+
+    for (i = 0; i < 13; i++) {
+
+        corda1[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++) {
+
+        corda2[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++) {
+
+        corda3[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++) {
+
+        corda4[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++) {
+
+        corda5[i].style.display = 'none'
+
+    }
+
+    for (i = 0; i < 13; i++) {
+
+        corda6[i].style.display = 'none'
+
+    }
+
+}
+
+
+
+
+
+function acordeC() {
+
+    apagar()
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = 'red'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'red'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'red'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'red'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'red'
+
+}
+
+function acordeG() {
+
+    apagar()
+
+    corda6[3].style.display = 'block'
+    corda6[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda2[3].style.display = 'block'
+    corda2[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+    corda1[3].style.display = 'block'
+    corda1[3].style.backgroundColor = 'rgb(27, 116, 199)'
+
+
+}
+
+function acordeAm() {
+
+    apagar()
+
+    corda5[0].style.display = 'block'
+    corda5[0].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'rgb(25, 9, 243)'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'rgb(25, 9, 243)'
+
+}
+
+
+function acordeF() {
+
+    apagar()
+
+    corda6[1].style.display = 'block'
+    corda6[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda4[3].style.display = 'block'
+    corda4[3].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+    corda1[1].style.display = 'block'
+    corda1[1].style.backgroundColor = ' rgb(0, 255, 13)'
+
+
+
+}
+
+apagar()
