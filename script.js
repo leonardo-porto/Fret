@@ -25,6 +25,22 @@ botao.onclick = function () {
 
         pentaAmShape1()
         
+    } else if (input == 'f' || input == 'F'){
+
+        fMaior()
+        
+    } else if (input == 'g' || input == 'G'){
+
+        gMaior()
+        
+    } else if (input == 'a' || input == 'A'){
+
+        aMaior()
+        
+    } else if (input == 'b' || input == 'B'){
+
+        bMaior()
+        
     }
 
     
@@ -33,12 +49,7 @@ botao.onclick = function () {
 
     
 }
-
-
-
-
-
-
+//******************************************************************************************************* */
 let corda1_casa0 = document.getElementById('corda1_casa0')
 let corda1_casa1 = document.getElementById('corda1_casa1')
 let corda1_casa2 = document.getElementById('corda1_casa2')
@@ -122,7 +133,7 @@ let corda6_casa9 = document.getElementById('corda6_casa9')
 let corda6_casa10 = document.getElementById('corda6_casa10')
 let corda6_casa11 = document.getElementById('corda6_casa11')
 let corda6_casa12 = document.getElementById('corda6_casa12')
-//****************************************************************/
+//*****************************************************************************************************/
 
 
 let corda1 = [corda1_casa0, corda1_casa1, corda1_casa2, corda1_casa3, corda1_casa4, corda1_casa5, corda1_casa6, corda1_casa7, corda1_casa8, corda1_casa9, corda1_casa10, corda1_casa11, corda1_casa12]
@@ -132,7 +143,7 @@ let corda4 = [corda4_casa0, corda4_casa1, corda4_casa2, corda4_casa3, corda4_cas
 let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_casa4, corda5_casa5, corda5_casa6, corda5_casa7, corda5_casa8, corda5_casa9, corda5_casa10, corda5_casa11, corda5_casa12]
 let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12]
 
-
+//******************************************************************************************************/
 
 
 
@@ -280,6 +291,99 @@ function eMaior() {
     
 }
 
+function fMaior() {
+
+    apagar()
+
+    corda6[1].style.display = 'block'
+    corda6[1].style.backgroundColor = 'greenyellow'
+
+    corda5[3].style.display = 'block'
+    corda5[3].style.backgroundColor = 'greenyellow'
+
+    corda4[3].style.display = 'block'
+    corda4[3].style.backgroundColor = 'greenyellow'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'greenyellow'
+
+    corda2[1].style.display = 'block'
+    corda2[1].style.backgroundColor = 'greenyellow'
+
+    corda1[1].style.display = 'block'
+    corda1[1].style.backgroundColor = 'greenyellow'
+    
+}
+
+function gMaior() {
+
+    apagar()
+
+    corda6[3].style.display = 'block'
+    corda6[3].style.backgroundColor = 'greenyellow'
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'greenyellow'
+
+    corda4[0].style.display = 'block'
+    corda4[0].style.backgroundColor = 'greenyellow'
+
+    corda3[0].style.display = 'block'
+    corda3[0].style.backgroundColor = 'greenyellow'
+
+    corda2[3].style.display = 'block'
+    corda2[3].style.backgroundColor = 'greenyellow'
+
+    corda1[3].style.display = 'block'
+    corda1[3].style.backgroundColor = 'greenyellow'
+
+    
+}
+
+function aMaior() {
+
+    apagar()
+
+    corda5[0].style.display = 'block'
+    corda5[0].style.backgroundColor = 'greenyellow'
+
+    corda4[2].style.display = 'block'
+    corda4[2].style.backgroundColor = 'greenyellow'
+
+    corda3[2].style.display = 'block'
+    corda3[2].style.backgroundColor = 'greenyellow'
+
+    corda2[2].style.display = 'block'
+    corda2[2].style.backgroundColor = 'greenyellow'
+
+    corda1[0].style.display = 'block'
+    corda1[0].style.backgroundColor = 'greenyellow'
+    
+}
+
+function bMaior() {
+
+    apagar()
+
+    corda5[2].style.display = 'block'
+    corda5[2].style.backgroundColor = 'greenyellow'
+
+    corda4[4].style.display = 'block'
+    corda4[4].style.backgroundColor = 'greenyellow'
+
+    corda3[4].style.display = 'block'
+    corda3[4].style.backgroundColor = 'greenyellow'
+
+    corda2[4].style.display = 'block'
+    corda2[4].style.backgroundColor = 'greenyellow'
+
+    corda1[2].style.display = 'block'
+    corda1[2].style.backgroundColor = 'greenyellow'
+
+
+    
+}
+
 function pentaAmShape1() {
 
     apagar()
@@ -324,6 +428,8 @@ function pentaAmShape1() {
 }
 
 function apagar() {
+
+    
 
     for (i = 0; i < 13; i++){
 
