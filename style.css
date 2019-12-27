@@ -1,6 +1,7 @@
 *{
 
     margin: 40px;
+    margin-top: 0;
 }
 
 .menu {
@@ -8,6 +9,7 @@
     list-style: none;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
     
 }
 
@@ -45,8 +47,9 @@
 
 .quadro:hover{
 
-    color: rgb(165, 162, 162);
+    color: yellow;
     cursor: pointer;
+    font-weight: bold;
 }
 
 #quadroEscalas {
@@ -61,6 +64,22 @@
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
     display: none;
+    
+}
+
+#quadroAcordes {
+
+    background-color: rgb(48, 55, 56);
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 58px;
+    left: 400px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    display: none;
+    
     
 }
 

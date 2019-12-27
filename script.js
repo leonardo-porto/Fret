@@ -167,6 +167,31 @@ let quadroEscalas = document.getElementById ('quadroEscalas')
 let quadroAcordes = document.getElementById ('quadroAcordes')
 let quadroArpejos = document.getElementById ('quadroArpejos')
 
+quadroEscalas.onmouseleave = function () {
+
+    quadroEscalas.style.display = 'none'
+    escalas.style.backgroundColor = 'rgb(112, 112, 112)'
+    
+}
+
+quadroAcordes.onmouseleave = function () {
+
+    quadroAcordes.style.display = 'none'
+    acordes.style.backgroundColor = 'rgb(112, 112, 112)'
+    
+}
+
+acordes.onmouseover = function () {
+
+    quadroAcordes.style.display = 'block'
+    acordes.style.backgroundColor = 'black'
+    
+}
+
+
+
+
+
 escalas.onmouseover = function () {
 
     quadroEscalas.style.display = 'block'
