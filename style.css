@@ -3,6 +3,90 @@
     margin: 40px;
 }
 
+.menu {
+
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#backMenu{
+
+    background-color: rgb(112, 112, 112);
+    height: 50px;
+    width: 1000px;
+    position: absolute;
+    top: 9px;
+}
+
+#acordes{
+
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    font-weight: bold;
+    color: whitesmoke;   
+    background-color: rgb(112, 112, 112);   
+    height: 39px;
+    width: 160px;
+    padding-top: 10px;
+    padding-left: 60px;
+   
+}
+
+#acordes:hover{
+
+    background-color: black;
+    cursor: pointer;
+   
+}
+
+#arpejos:hover{
+
+    background-color: black;
+    cursor: pointer;
+   
+}
+
+#escalas:hover{
+
+    background-color: black;
+    cursor: pointer;
+   
+}
+
+#arpejos{
+
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    font-weight: bold;
+    color: whitesmoke;   
+    background-color: rgb(112, 112, 112);   
+    height: 39px;
+    width: 160px;
+    padding-top: 10px;
+    padding-left: 60px;
+    
+}
+
+#escalas{
+
+    position: absolute;
+    top: 10px;
+    left: 800px;
+    font-weight: bold;
+    color: whitesmoke;  
+    background-color: rgb(112, 112, 112);   
+    height: 39px;
+    width: 160px;
+    padding-top: 10px;
+    padding-left: 60px;
+    
+}
+
+
 body{
 
     background-color: whitesmoke;
@@ -12,7 +96,7 @@ body{
     
     border-radius: 5px;
     background-color: black;
-    height: 7px;
+    height: 2px;
     width: 1000px;
     position: absolute;
     top: 100px   
@@ -25,7 +109,7 @@ body{
     
     border-radius: 5px;
     background-color: black;
-    height: 7px;
+    height: 3px;
     width: 1000px;
     position: absolute;
     top: 150px   
@@ -36,7 +120,7 @@ body{
     
     border-radius: 5px;
     background-color: black;
-    height: 7px;
+    height: 4px;
     width: 1000px;
     position: absolute;
     top: 200px   
@@ -47,7 +131,7 @@ body{
     
     border-radius: 5px;
     background-color: black;
-    height: 7px;
+    height: 5px;
     width: 1000px;
     position: absolute;
     top: 250px   
@@ -58,7 +142,7 @@ body{
     
     border-radius: 5px;
     background-color: black;
-    height: 7px;
+    height: 6px;
     width: 1000px;
     position: absolute;
     top: 300px   
