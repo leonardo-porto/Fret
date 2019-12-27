@@ -530,56 +530,9 @@ function bMaior() {
     corda3[4].style.backgroundColor = 'greenyellow'
 
     corda2[4].style.display = 'block'
-    corda2[4].style.backgroundColor = 'greenyellow'
-
-    
-
-
-    
+    corda2[4].style.backgroundColor = 'greenyellow'    
 }
 
-function pentaAmShape1() {
-
-    apagar()
-
-    corda6[5].style.display = 'block'
-    corda6[5].style.backgroundColor = 'greenyellow'
-
-    corda6[8].style.display = 'block'
-    corda6[8].style.backgroundColor = 'greenyellow'
-
-    corda5[5].style.display = 'block'
-    corda5[5].style.backgroundColor = 'greenyellow'
-
-    corda5[7].style.display = 'block'
-    corda5[7].style.backgroundColor = 'greenyellow'
-
-    
-
-    corda4[5].style.display = 'block'
-    corda4[5].style.backgroundColor = 'greenyellow'
-
-    corda4[7].style.display = 'block'
-    corda4[7].style.backgroundColor = 'greenyellow'
-
-    corda3[5].style.display = 'block'
-    corda3[5].style.backgroundColor = 'greenyellow'
-
-    corda3[7].style.display = 'block'
-    corda3[7].style.backgroundColor = 'greenyellow'
-    
-    corda2[5].style.display = 'block'
-    corda2[5].style.backgroundColor = 'greenyellow'
-
-    corda2[8].style.display = 'block'
-    corda2[8].style.backgroundColor = 'greenyellow'
-
-    corda1[5].style.display = 'block'
-    corda1[5].style.backgroundColor = 'greenyellow'
-
-    corda1[8].style.display = 'block'
-    corda1[8].style.backgroundColor = 'greenyellow'
-}
 
 function apagar() {
 
@@ -588,38 +541,13 @@ function apagar() {
     for (i = 0; i < 13; i++){
 
         corda1[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda2[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda3[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda4[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda5[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda6[i].style.display = 'none'
 
-    }
+    }  
     
 }
 
