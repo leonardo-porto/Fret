@@ -1,3 +1,5 @@
+
+
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
@@ -157,6 +159,23 @@ let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_cas
 let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12]
 
 //******************************************************************************************************/
+
+let escalas = document.getElementById ('escalas')
+let acordes = document.getElementById ('acordes')
+let arpejos = document.getElementById ('arpejos')
+let quadroEscalas = document.getElementById ('quadroEscalas')
+let quadroAcordes = document.getElementById ('quadroAcordes')
+let quadroArpejos = document.getElementById ('quadroArpejos')
+
+escalas.onmouseover = function () {
+
+    quadroEscalas.style.display = 'block'
+    escalas.style.backgroundColor = 'black'
+    
+}
+
+
+
 
 
 

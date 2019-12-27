@@ -35,6 +35,35 @@
    
 }
 
+.quadro{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    color: whitesmoke;
+}
+
+.quadro:hover{
+
+    color: rgb(165, 162, 162);
+    cursor: pointer;
+}
+
+#quadroEscalas {
+
+    background-color: rgb(48, 55, 56);
+    height: 300px;
+    width: 220px;
+    position: absolute;
+    top: 58px;
+    left: 800px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    display: none;
+    
+}
+
 #acordes:hover{
 
     background-color: black;
@@ -1418,7 +1447,7 @@ body{
 
     background-color: yellowgreen;
     height: 50px;
-    width: 100px;
+    width: 200px;
     font-size: 30px;
     padding: 10px;
     border-radius: 10px;
@@ -1464,4 +1493,76 @@ body{
     color: wheat;
     font-weight: bold;
     
+}
+
+#bolinha1 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 220px;
+    left: 310px;
+    z-index: -1;
+}
+
+#bolinha2 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 220px;
+    left: 470px;
+    z-index: -1;
+}
+
+#bolinha3 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 220px;
+    left: 630px;
+    z-index: -1;
+}
+
+#bolinha4 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 220px;
+    left: 790px;
+    z-index: -1;
+}
+
+#bolinha5 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 170px;
+    left: 1030px;
+    z-index: -1;
+}
+
+#bolinha6 {
+
+    background-color: rgb(49, 48, 48);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    left: 1030px;
+    z-index: -1;
 }
