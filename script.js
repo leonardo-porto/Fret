@@ -552,3 +552,47 @@ function apagar() {
 }
 
 apagar()
+//**************************************************************************************************/
+
+let bracoGuitarra = [
+[], 
+['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'], 
+['B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'], 
+['G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G'], 
+['D', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D'],
+['A', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A'],
+['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E']]
+
+console.log(bracoGuitarra[2][0])
+
+
+let escalaCromatica = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+let escalaCMaior = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+let escalaCMenorNatural = ['C', 'D', 'Eb', 'F', 'G', 'Ab', 'Bb']
+let escalaCMenorHarmonica = ['C', 'D', 'Eb', 'F', 'G', 'Ab', 'B']
+let escalaCMenorMelodica = ['C', 'D', 'Eb', 'F', 'G', 'A', 'B']
+let escalaCJonio = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+let escalaCMixolidio = ['C', 'D', 'E', 'F', 'G', 'A', 'Bb']
+let escalaCLidio = ['C', 'D', 'E', 'F#', 'G', 'A', 'B']
+let escalaCEolio = ['C', 'D', 'Eb', 'F', 'G', 'Ab', 'Bb']
+let escalaCDorico = ['C', 'D', 'Eb', 'F', 'G', 'A', 'Bb']
+let escalaCFrigio = ['C', 'Db', 'Eb', 'F', 'G', 'Ab', 'Bb']
+let escalaCLocrio = ['C', 'Db', 'Eb', 'F', 'Gb', 'Ab', 'Bb']
+
+let triadeC = ['C', 'E', 'G']
+let triadeCm = ['C', 'Eb', 'G']
+let triadeCDim = ['C', 'Eb', 'Gb']
+let triadeCAum = ['C', 'E', 'G#']
+
+let tetradeC7M = ['C', 'E', 'G', 'B']
+let tetradeC7 = ['C', 'E', 'G', 'Bb']
+let tetradeCm7 = ['C', 'Eb', 'G', 'Bb']
+let tetradeCm7b5 = ['C', 'Eb', 'Gb', 'Bb']
+let tetradeCDim = ['C', 'Eb', 'Gb', 'Bbb']
+let tetradeCm7M = ['C', 'Eb', 'G', 'B']
+
+
+
+//*********************************************************************************************************/
+
+console.log(escalaCromatica)
