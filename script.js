@@ -1,6 +1,7 @@
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
+let pestana = document.getElementById('pestana')
 
 
 //****************************************************************************************/
@@ -234,6 +235,8 @@ escalas.onmouseover = function () {
 
 
 clear.onclick = function limpar() {
+
+    pestana.style.display = 'none'
     
     
     for (i = 0; i < 13; i++){
@@ -449,9 +452,10 @@ function e7() {
 function fMaior() {
 
     apagar()
+    pestana.style.display = 'block'
+    pestana.style.left = '140px'
 
-    corda6[1].style.display = 'block'
-    corda6[1].style.backgroundColor = 'greenyellow'
+    
 
     corda5[3].style.display = 'block'
     corda5[3].style.backgroundColor = 'greenyellow'
@@ -462,11 +466,7 @@ function fMaior() {
     corda3[2].style.display = 'block'
     corda3[2].style.backgroundColor = 'greenyellow'
 
-    corda2[1].style.display = 'block'
-    corda2[1].style.backgroundColor = 'greenyellow'
-
-    corda1[1].style.display = 'block'
-    corda1[1].style.backgroundColor = 'greenyellow'
+   
     
 }
 
@@ -520,8 +520,8 @@ function bMaior() {
 
     apagar()
 
-    corda5[2].style.display = 'block'
-    corda5[2].style.backgroundColor = 'greenyellow'
+    pestana.style.display = 'block'
+    pestana.style.left = '220px'
 
     corda4[4].style.display = 'block'
     corda4[4].style.backgroundColor = 'greenyellow'
@@ -532,8 +532,7 @@ function bMaior() {
     corda2[4].style.display = 'block'
     corda2[4].style.backgroundColor = 'greenyellow'
 
-    corda1[2].style.display = 'block'
-    corda1[2].style.backgroundColor = 'greenyellow'
+    
 
 
     
@@ -584,7 +583,7 @@ function pentaAmShape1() {
 
 function apagar() {
 
-    
+    pestana.style.display = 'none'
 
     for (i = 0; i < 13; i++){
 
