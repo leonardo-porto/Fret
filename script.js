@@ -569,3 +569,5 @@ function apagar() {
     }
     
 }
+
+apagar()
