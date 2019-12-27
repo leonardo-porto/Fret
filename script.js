@@ -1,8 +1,7 @@
-
-
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
+
 
 //****************************************************************************************/
 
@@ -181,27 +180,57 @@ quadroAcordes.onmouseleave = function () {
     
 }
 
+quadroArpejos.onmouseleave = function () {
+
+    quadroArpejos.style.display = 'none'
+    arpejos.style.backgroundColor = 'rgb(112, 112, 112)'
+    
+}
+
 acordes.onmouseover = function () {
 
     quadroAcordes.style.display = 'block'
     acordes.style.backgroundColor = 'black'
+    arpejos.style.backgroundColor = 'rgb(112, 112, 112)'
+    escalas.style.backgroundColor = 'rgb(112, 112, 112)'
+
+    quadroArpejos.style.display = 'none'
+    quadroEscalas.style.display = 'none'
+
+    
+    
+    
     
 }
 
+arpejos.onmouseover = function () {
 
+    quadroArpejos.style.display = 'block'
+    arpejos.style.backgroundColor = 'black'
+    escalas.style.backgroundColor = 'rgb(112, 112, 112)'
+    acordes.style.backgroundColor = 'rgb(112, 112, 112)'
 
+    quadroAcordes.style.display = 'none'
+    quadroEscalas.style.display = 'none'
+    
+    
+    
+}
 
 
 escalas.onmouseover = function () {
 
     quadroEscalas.style.display = 'block'
     escalas.style.backgroundColor = 'black'
+    arpejos.style.backgroundColor = 'rgb(112, 112, 112)'
+    acordes.style.backgroundColor = 'rgb(112, 112, 112)'
+
+    quadroArpejos.style.display = 'none'
+    quadroAcordes.style.display = 'none'
+    
+    
     
 }
-
-
-
-
 
 
 clear.onclick = function limpar() {
