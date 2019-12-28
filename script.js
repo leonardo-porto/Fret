@@ -592,6 +592,34 @@ let tetradeCDim = ['C', 'Eb', 'Gb', 'Bbb']
 let tetradeCm7M = ['C', 'Eb', 'G', 'B']
 
 
+let escalaGMaior = ['G', 'A', 'B', 'C', 'D', 'E', 'F#', 'G']
+let escalaGMenorNatural = ['G', 'A', 'Bb', 'C', 'D', 'Eb', 'F', 'G']
+let escalaGMenorHarmonica = ['G', 'A', 'Bb', 'C', 'D', 'Eb', 'F#', 'G']
+let escalaGMenorMelodica = ['G', 'A', 'Bb', 'C', 'D', 'E', 'F#', 'G']
+let escalaGJonio = ['G', 'A', 'B', 'C', 'D', 'E', 'F#', 'G']
+let escalaGMixolidio = ['G', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
+let escalaGLidio = ['G', 'A', 'B', 'C#', 'D', 'E', 'F#', 'G']
+let escalaGEolio = ['G', 'A', 'Bb', 'C', 'D', 'Eb', 'F', 'G']
+let escalaGDorico = ['G', 'A', 'Bb', 'C', 'D', 'E', 'F', 'G']
+let escalaGFrigio = ['G', 'Ab', 'Bb', 'C', 'D', 'Eb', 'F', 'G']
+let escalaGLocrio = ['G', 'Ab', 'Bb', 'C', 'Db', 'Eb', 'F', 'G']
+
+let triadeG = ['G', 'B', 'D']
+let triadeGm = ['G', 'Bb', 'D']
+let triadeGDim = ['G', 'Bb', 'Db']
+let triadeGAum = ['G', 'B', 'D#']
+
+let tetradeG7M = ['G', 'B', 'D', 'F#']
+let tetradeG7 = ['G', 'B', 'D', 'F']
+let tetradeGm7 = ['G', 'Bb', 'D', 'F']
+let tetradeGm7b5 = ['G', 'Bb', 'Db', 'F']
+let tetradeGDim = ['G', 'Bb', 'Db', 'Fbb']
+let tetradeGm7M = ['G', 'Bb', 'D', 'F#']
+
+
+
+
+
 
 //*********************************************************************************************************/
 

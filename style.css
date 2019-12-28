@@ -13,6 +13,11 @@
     
 }
 
+.opcoes {
+
+    display: none;
+}
+
 #backMenu{
 
     background-color: rgb(112, 112, 112);
@@ -1515,7 +1520,7 @@ body{
     font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 400px;
+    top: 410px;
     left: 600px;
     border-radius: 10px;
     background-color: black;
@@ -1526,12 +1531,28 @@ body{
 #botao{
 
     height: 50px;
+    width: 400px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 470px;
+    left: 600px;
+    border-radius: 10px;
+    background-color:rgb(65, 65, 102);
+    color: wheat;
+    font-weight: bold;
+    
+}
+
+#botao0{
+
+    height: 50px;
     width: 200px;
     font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 460px;
-    left: 600px;
+    top: 9px;
+    right: 20px;
     border-radius: 10px;
     background-color:rgb(65, 65, 102);
     color: wheat;
@@ -1609,4 +1630,54 @@ body{
     top: 270px;
     left: 1030px;
     z-index: -1;
+}
+
+#tonalidade {
+
+    background-color: rgb(44, 155, 230);
+    position: absolute;
+    top: 9px;
+    left: 820px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+#estrutura {
+
+    background-color: purple;
+    position: absolute;
+    top: 9px;
+    left: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+#tipo {
+
+    background-color: gray;
+    position: absolute;
+    top: 9px;
+    left: 600px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+option:hover{
+
+    background-color: white;
+    color:  rgb(44, 155, 230);
+
+
 }

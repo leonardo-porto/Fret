@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div id = 'quadroEscalas'>
+    <div class = 'opcoes' id = 'quadroEscalas'>
 
         <p class="quadro">Maior</p>
         <p class="quadro">Menor</p>
@@ -23,7 +23,7 @@
 
     </div>
 
-    <div id = 'quadroAcordes'>
+    <div id = 'quadroAcordes' class = 'opcoes'>
 
         <p class="quadro">Maior</p>
         <p class="quadro">Menor</p>
@@ -37,7 +37,7 @@
 
     </div>
 
-    <div id = 'quadroArpejos'>
+    <div id = 'quadroArpejos' class = 'opcoes'>
 
         <p class="quadro">Maior</p>
         <p class="quadro">Menor</p>
@@ -55,13 +55,13 @@
 
     <nav>
 
-        <div id = 'backMenu'></div>
+        <div id = 'backMenu' class = 'opcoes'></div>
 
-        <ul class="menu">
+        <ul class="menu" class = 'opcoes'>
 
-            <li id = 'acordes'>Acordes</li>
-            <li id = 'arpejos'>Arpejos</li>
-            <li id = 'escalas'>Escalas</li>
+            <li id = 'acordes' class = 'opcoes'>Acordes</li>
+            <li id = 'arpejos' class = 'opcoes'>Arpejos</li>
+            <li id = 'escalas' class = 'opcoes'>Escalas</li>
 
         </ul>
 
@@ -208,7 +208,7 @@
     <div id = 'mostrar'>Mostrar Tudo</div>
 
     <input id = 'input' type="text">
-    <input type="button" value="Buscar" id = 'botao'>
+    <input type="button" value="Buscar por Cifra" id = 'botao'>
 
     <div id = 'bolinha1'></div>
     <div id = 'bolinha2'></div>
@@ -216,6 +216,45 @@
     <div id = 'bolinha4'></div>
     <div id = 'bolinha5'></div>
     <div id = 'bolinha6'></div>
+
+    <select name="tonalidade" id="tonalidade">
+
+        <option value="">Tonalidade</option>
+        <option value="c">C</option>
+        <option value="cs">C#</option>
+        <option value="d">D</option>
+        <option value="ds">D#</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="fs">F#</option>
+        <option value="g">G</option>
+        <option value="gs">G#</option>
+        <option value="a">A</option>
+        <option value="as">A#</option>
+        <option value="b">B</option>
+
+    </select>
+
+    <select name="estrutura" id="estrutura">
+
+        <option value="">Estrutura</option>
+        <option value="acorde">Acorde</option>
+        <option value="arpejo">Arpejo</option>
+        <option value="escala">Escala</option>      
+
+    </select>
+
+    <select name="tipo" id="tipo">
+
+        <option value="">Tipo</option>
+        <option value="maior">Maior</option>
+        <option value="menor">Menor</option>
+        <option value="diminuto">Diminuto</option>  
+        <option value="aumentado">Aumentado</option>      
+
+    </select>
+
+    <input type="button" value="Buscar" id = 'botao0'>
 
 
     
