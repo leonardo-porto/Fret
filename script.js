@@ -1,69 +1,88 @@
+let estrutura = document.getElementById('estrutura')
+let tipo = document.getElementById('tipo')
+let tonalidade = document.getElementById('tonalidade')
+let botao0 = document.getElementById('botao0')
+let posicao = document.getElementById('posicao')
+
+
+
+
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
 let pestana = document.getElementById('pestana')
 
+botao.style.display = 'none'
+input.style.display = 'none'
+
 
 //****************************************************************************************/
 
-botao.onclick = function () {
+botao0.onclick = function () {
 
-    let input = document.getElementById('input').value
-
-    if (input == 'c' || input == 'C'){
+    if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '1'){
 
         cMaior()
 
+    }  else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '2'){
 
-    } else if (input == 'd' || input == 'D'){
+        cMaior(2)
+
+    }  else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '3'){
+
+        cMaior(3)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '4'){
+
+        cMaior(4)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '5'){
+
+        cMaior(5)
+
+    }    
+    
+    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '1'){
 
         dMaior()
 
-    } else if (input == 'e' || input == 'E'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '1'){
 
         eMaior()
 
-    } else if (input == 'am penta shape 1' || input == 'penta am shape 1'){
-
-        pentaAmShape1()
-        
-    } else if (input == 'f' || input == 'F'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'f' && posicao.value == '1'){
 
         fMaior()
-        
-    } else if (input == 'g' || input == 'G'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'g' && posicao.value == '1'){
 
         gMaior()
-        
-    } else if (input == 'a' || input == 'A'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'a' && posicao.value == '1'){
 
         aMaior()
-        
-    } else if (input == 'b' || input == 'B'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'b' && posicao.value == '1'){
 
         bMaior()
-        
-    } else if (input == 'c7' || input == 'C7'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'c' && posicao.value == '1'){
 
         c7()
-        
-    } else if (input == 'd7' || input == 'D7'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'd' && posicao.value == '1'){
 
         d7()
-        
-    } else if (input == 'e7' || input == 'E7'){
+
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'e' && posicao.value == '1'){
 
         e7()
-        
-    }
 
-
-    
-
-
-
+    } 
     
 }
+
+
 //******************************************************************************************************* */
 let corda1_casa0 = document.getElementById('corda1_casa0')
 let corda1_casa1 = document.getElementById('corda1_casa1')
@@ -78,6 +97,9 @@ let corda1_casa9 = document.getElementById('corda1_casa9')
 let corda1_casa10 = document.getElementById('corda1_casa10')
 let corda1_casa11 = document.getElementById('corda1_casa11')
 let corda1_casa12 = document.getElementById('corda1_casa12')
+let corda1_casa13 = document.getElementById('corda1_casa13')
+let corda1_casa14 = document.getElementById('corda1_casa14')
+let corda1_casa15 = document.getElementById('corda1_casa15')
 //****************************************************************/
 let corda2_casa0 = document.getElementById('corda2_casa0')
 let corda2_casa1 = document.getElementById('corda2_casa1')
@@ -92,6 +114,9 @@ let corda2_casa9 = document.getElementById('corda2_casa9')
 let corda2_casa10 = document.getElementById('corda2_casa10')
 let corda2_casa11 = document.getElementById('corda2_casa11')
 let corda2_casa12 = document.getElementById('corda2_casa12')
+let corda2_casa13 = document.getElementById('corda2_casa13')
+let corda2_casa14 = document.getElementById('corda2_casa14')
+let corda2_casa15 = document.getElementById('corda2_casa15')
 //****************************************************************/
 let corda3_casa0 = document.getElementById('corda3_casa0')
 let corda3_casa1 = document.getElementById('corda3_casa1')
@@ -106,6 +131,9 @@ let corda3_casa9 = document.getElementById('corda3_casa9')
 let corda3_casa10 = document.getElementById('corda3_casa10')
 let corda3_casa11 = document.getElementById('corda3_casa11')
 let corda3_casa12 = document.getElementById('corda3_casa12')
+let corda3_casa13 = document.getElementById('corda3_casa13')
+let corda3_casa14 = document.getElementById('corda3_casa14')
+let corda3_casa15 = document.getElementById('corda3_casa15')
 //****************************************************************/
 let corda4_casa0 = document.getElementById('corda4_casa0')
 let corda4_casa1 = document.getElementById('corda4_casa1')
@@ -120,6 +148,9 @@ let corda4_casa9 = document.getElementById('corda4_casa9')
 let corda4_casa10 = document.getElementById('corda4_casa10')
 let corda4_casa11 = document.getElementById('corda4_casa11')
 let corda4_casa12 = document.getElementById('corda4_casa12')
+let corda4_casa13 = document.getElementById('corda4_casa13')
+let corda4_casa14 = document.getElementById('corda4_casa14')
+let corda4_casa15 = document.getElementById('corda4_casa15')
 //****************************************************************/
 let corda5_casa0 = document.getElementById('corda5_casa0')
 let corda5_casa1 = document.getElementById('corda5_casa1')
@@ -134,6 +165,9 @@ let corda5_casa9 = document.getElementById('corda5_casa9')
 let corda5_casa10 = document.getElementById('corda5_casa10')
 let corda5_casa11 = document.getElementById('corda5_casa11')
 let corda5_casa12 = document.getElementById('corda5_casa12')
+let corda5_casa13 = document.getElementById('corda5_casa13')
+let corda5_casa14 = document.getElementById('corda5_casa14')
+let corda5_casa15 = document.getElementById('corda5_casa15')
 //****************************************************************/
 let corda6_casa0 = document.getElementById('corda6_casa0')
 let corda6_casa1 = document.getElementById('corda6_casa1')
@@ -148,15 +182,18 @@ let corda6_casa9 = document.getElementById('corda6_casa9')
 let corda6_casa10 = document.getElementById('corda6_casa10')
 let corda6_casa11 = document.getElementById('corda6_casa11')
 let corda6_casa12 = document.getElementById('corda6_casa12')
+let corda6_casa13 = document.getElementById('corda6_casa13')
+let corda6_casa14 = document.getElementById('corda6_casa14')
+let corda6_casa15 = document.getElementById('corda6_casa15')
 //*****************************************************************************************************/
 
 
-let corda1 = [corda1_casa0, corda1_casa1, corda1_casa2, corda1_casa3, corda1_casa4, corda1_casa5, corda1_casa6, corda1_casa7, corda1_casa8, corda1_casa9, corda1_casa10, corda1_casa11, corda1_casa12]
-let corda2 = [corda2_casa0, corda2_casa1, corda2_casa2, corda2_casa3, corda2_casa4, corda2_casa5, corda2_casa6, corda2_casa7, corda2_casa8, corda2_casa9, corda2_casa10, corda2_casa11, corda2_casa12]
-let corda3 = [corda3_casa0, corda3_casa1, corda3_casa2, corda3_casa3, corda3_casa4, corda3_casa5, corda3_casa6, corda3_casa7, corda3_casa8, corda3_casa9, corda3_casa10, corda3_casa11, corda3_casa12]
-let corda4 = [corda4_casa0, corda4_casa1, corda4_casa2, corda4_casa3, corda4_casa4, corda4_casa5, corda4_casa6, corda4_casa7, corda4_casa8, corda4_casa9, corda4_casa10, corda4_casa11, corda4_casa12]
-let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_casa4, corda5_casa5, corda5_casa6, corda5_casa7, corda5_casa8, corda5_casa9, corda5_casa10, corda5_casa11, corda5_casa12]
-let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12]
+let corda1 = [corda1_casa0, corda1_casa1, corda1_casa2, corda1_casa3, corda1_casa4, corda1_casa5, corda1_casa6, corda1_casa7, corda1_casa8, corda1_casa9, corda1_casa10, corda1_casa11, corda1_casa12, corda1_casa13, corda1_casa14, corda1_casa15]
+let corda2 = [corda2_casa0, corda2_casa1, corda2_casa2, corda2_casa3, corda2_casa4, corda2_casa5, corda2_casa6, corda2_casa7, corda2_casa8, corda2_casa9, corda2_casa10, corda2_casa11, corda2_casa12, corda2_casa13, corda2_casa14, corda2_casa15]
+let corda3 = [corda3_casa0, corda3_casa1, corda3_casa2, corda3_casa3, corda3_casa4, corda3_casa5, corda3_casa6, corda3_casa7, corda3_casa8, corda3_casa9, corda3_casa10, corda3_casa11, corda3_casa12, corda3_casa13, corda3_casa14, corda3_casa15]
+let corda4 = [corda4_casa0, corda4_casa1, corda4_casa2, corda4_casa3, corda4_casa4, corda4_casa5, corda4_casa6, corda4_casa7, corda4_casa8, corda4_casa9, corda4_casa10, corda4_casa11, corda4_casa12, corda4_casa13, corda4_casa14, corda4_casa15]
+let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_casa4, corda5_casa5, corda5_casa6, corda5_casa7, corda5_casa8, corda5_casa9, corda5_casa10, corda5_casa11, corda5_casa12, corda5_casa13, corda5_casa14, corda5_casa15]
+let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12, corda6_casa13, corda6_casa14, corda6_casa15]
 
 //******************************************************************************************************/
 
@@ -196,11 +233,7 @@ acordes.onmouseover = function () {
     escalas.style.backgroundColor = 'rgb(112, 112, 112)'
 
     quadroArpejos.style.display = 'none'
-    quadroEscalas.style.display = 'none'
-
-    
-    
-    
+    quadroEscalas.style.display = 'none'   
     
 }
 
@@ -212,12 +245,9 @@ arpejos.onmouseover = function () {
     acordes.style.backgroundColor = 'rgb(112, 112, 112)'
 
     quadroAcordes.style.display = 'none'
-    quadroEscalas.style.display = 'none'
-    
-    
+    quadroEscalas.style.display = 'none'  
     
 }
-
 
 escalas.onmouseover = function () {
 
@@ -229,8 +259,6 @@ escalas.onmouseover = function () {
     quadroArpejos.style.display = 'none'
     quadroAcordes.style.display = 'none'
     
-    
-    
 }
 
 
@@ -239,86 +267,38 @@ clear.onclick = function limpar() {
     pestana.style.display = 'none'
     
     
-    for (i = 0; i < 13; i++){
+    for (i = 0; i < 16; i++){
 
         corda1[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda2[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda3[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda4[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda5[i].style.display = 'none'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda6[i].style.display = 'none'
 
-    }
+    }    
 }
 
 
 mostrar.onclick = function mostrar() {
     
     
-    for (i = 0; i < 13; i++){
+    for (i = 0; i < 16; i++){
 
         corda1[i].style.display = 'block'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda2[i].style.display = 'block'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda3[i].style.display = 'block'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda4[i].style.display = 'block'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda5[i].style.display = 'block'
-
-    }
-
-    for (i = 0; i < 13; i++){
-
         corda6[i].style.display = 'block'
 
-    }
+    }    
 }
 //************************************************************************************************** */
-function cMaior() {
+function cMaior(posicao) {
 
+    
+    
     apagar()
 
     corda5[3].style.display = 'block'
@@ -335,11 +315,94 @@ function cMaior() {
 
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
+
+    if (posicao == 2){
+
+        apagar()
+
+        corda5[3].style.display = 'block'
+        corda5[3].style.backgroundColor = 'greenyellow'
+    
+        corda4[5].style.display = 'block'
+        corda4[5].style.backgroundColor = 'greenyellow'
+    
+        corda3[5].style.display = 'block'
+        corda3[5].style.backgroundColor = 'greenyellow'
+    
+        corda2[5].style.display = 'block'
+        corda2[5].style.backgroundColor = 'greenyellow'
+    
+        corda1[3].style.display = 'block'
+        corda1[3].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 3){
+
+        apagar()
+
+        corda6[8].style.display = 'block'
+        corda6[8].style.backgroundColor = 'greenyellow'
+
+        corda5[7].style.display = 'block'
+        corda5[7].style.backgroundColor = 'greenyellow'
+    
+        corda4[5].style.display = 'block'
+        corda4[5].style.backgroundColor = 'greenyellow'
+    
+        corda3[5].style.display = 'block'
+        corda3[5].style.backgroundColor = 'greenyellow'
+    
+        corda2[5].style.display = 'block'
+        corda2[5].style.backgroundColor = 'greenyellow'
+    
+        corda1[8].style.display = 'block'
+        corda1[8].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 4){
+
+        apagar()
+
+        corda6[8].style.display = 'block'
+        corda6[8].style.backgroundColor = 'greenyellow'
+
+        corda5[10].style.display = 'block'
+        corda5[10].style.backgroundColor = 'greenyellow'
+    
+        corda4[10].style.display = 'block'
+        corda4[10].style.backgroundColor = 'greenyellow'
+    
+        corda3[9].style.display = 'block'
+        corda3[9].style.backgroundColor = 'greenyellow'
+    
+        corda2[8].style.display = 'block'
+        corda2[8].style.backgroundColor = 'greenyellow'
+    
+        corda1[8].style.display = 'block'
+        corda1[8].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 5){
+
+        apagar()
+
+       
+    
+        corda4[10].style.display = 'block'
+        corda4[10].style.backgroundColor = 'greenyellow'
+    
+        corda3[12].style.display = 'block'
+        corda3[12].style.backgroundColor = 'greenyellow'
+    
+        corda2[13].style.display = 'block'
+        corda2[13].style.backgroundColor = 'greenyellow'
+    
+        corda1[12].style.display = 'block'
+        corda1[12].style.backgroundColor = 'greenyellow'
+
+    }
     
 }
 
 //************************************************************************************************** */
-function c7() {
+function c7(posicao) {
 
     apagar()
 
@@ -362,7 +425,7 @@ function c7() {
 
 //********************************************************************************************** */
 
-function dMaior() {
+function dMaior(posicao) {
 
     apagar()
 
@@ -382,7 +445,7 @@ function dMaior() {
 
 //*************************************************************************************** */
 
-function d7() {
+function d7(posicao) {
 
     apagar()
 
@@ -400,7 +463,7 @@ function d7() {
     
 }
 
-function eMaior() {
+function eMaior(posicao) {
 
     apagar()
 
@@ -425,7 +488,7 @@ function eMaior() {
 }
 
 //************************************************************************************** */
-function e7() {
+function e7(posicao) {
 
     apagar()
 
@@ -449,7 +512,7 @@ function e7() {
     
 }
 
-function fMaior() {
+function fMaior(posicao) {
 
     apagar()
     pestana.style.display = 'block'
@@ -470,7 +533,7 @@ function fMaior() {
     
 }
 
-function gMaior() {
+function gMaior(posicao) {
 
     apagar()
 
@@ -495,7 +558,7 @@ function gMaior() {
     
 }
 
-function aMaior() {
+function aMaior(posicao) {
 
     apagar()
 
@@ -516,7 +579,7 @@ function aMaior() {
     
 }
 
-function bMaior() {
+function bMaior(posicao) {
 
     apagar()
 
@@ -538,7 +601,7 @@ function apagar() {
 
     pestana.style.display = 'none'
 
-    for (i = 0; i < 13; i++){
+    for (i = 0; i < 16; i++){
 
         corda1[i].style.display = 'none'
         corda2[i].style.display = 'none'
@@ -623,4 +686,3 @@ let tetradeGm7M = ['G', 'Bb', 'D', 'F#']
 
 //*********************************************************************************************************/
 
-console.log(escalaCromatica)

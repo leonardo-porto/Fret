@@ -175,7 +175,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 2px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 100px   
 
@@ -188,7 +188,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 3px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 150px   
 
@@ -199,7 +199,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 4px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 200px   
 
@@ -210,7 +210,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 5px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 250px   
 
@@ -221,7 +221,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 6px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 300px   
 
@@ -232,7 +232,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 7px;
-    width: 1000px;
+    width: 1200px;
     position: absolute;
     top: 350px   
 
@@ -377,6 +377,28 @@ body{
     position: absolute;
     top: 100px;
     left: 1080px;
+
+}
+
+#traste14 {
+
+    background-color: gray;
+    height: 250px;
+    width: 3px;
+    position: absolute;
+    top: 100px;
+    left: 1160px;
+
+}
+
+#traste15 {
+
+    background-color: gray;
+    height: 250px;
+    width: 3px;
+    position: absolute;
+    top: 100px;
+    left: 1240px;
 
 }
 
@@ -562,6 +584,48 @@ body{
     left: 1020px;
 }
 
+#corda6_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 330px;
+    left: 1100px;
+}
+
+#corda6_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 330px;
+    left: 1180px;
+}
+
+#corda6_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 330px;
+    left: 1260px;
+}
+
 #corda5_casa0{
 
     background-color: gray;
@@ -742,6 +806,48 @@ body{
     position: absolute;
     top: 280px;
     left: 1020px;
+}
+
+#corda5_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 1100px;
+}
+
+#corda5_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 1180px;
+}
+
+#corda5_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 1260px;
 }
 
 #corda4_casa0{
@@ -926,6 +1032,48 @@ body{
     left: 1020px;
 }
 
+#corda4_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 230px;
+    left: 1100px;
+}
+
+#corda4_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 230px;
+    left: 1180px;
+}
+
+#corda4_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 230px;
+    left: 1260px;
+}
+
 #corda3_casa0{
 
     background-color: gray;
@@ -1106,6 +1254,48 @@ body{
     position: absolute;
     top: 180px;
     left: 1020px;
+}
+
+#corda3_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 180px;
+    left: 1100px;
+}
+
+#corda3_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 180px;
+    left: 1180px;
+}
+
+#corda3_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 180px;
+    left: 1260px;
 }
 
 #corda2_casa0{
@@ -1290,6 +1480,48 @@ body{
     left: 1020px;
 }
 
+#corda2_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 1100px;
+}
+
+#corda2_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 1180px;
+}
+
+#corda2_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 1260px;
+}
+
 #corda1_casa0{
 
     background-color: gray;
@@ -1472,6 +1704,48 @@ body{
     left: 1020px;
 }
 
+#corda1_casa13{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 1100px;
+}
+
+#corda1_casa14{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 1180px;
+}
+
+#corda1_casa15{
+
+    background-color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 1260px;
+}
+
 #limpar {
 
     background-color: rgb(27, 200, 223);
@@ -1637,7 +1911,7 @@ body{
     background-color: rgb(44, 155, 230);
     position: absolute;
     top: 9px;
-    left: 820px;
+    left: 740px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -1660,12 +1934,26 @@ body{
     border-radius: 10px;
 }
 
+#posicao {
+
+    background-color: royalblue;
+    position: absolute;
+    top: 9px;
+    left: 880px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
 #tipo {
 
     background-color: gray;
     position: absolute;
     top: 9px;
-    left: 600px;
+    left: 530px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
