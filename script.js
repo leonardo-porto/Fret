@@ -41,6 +41,10 @@ botao0.onclick = function () {
 
         cMaior(5)
 
+    } else if (estrutura.value == 'acorde' && tipo.value == 'menor' && tonalidade.value == 'c' && posicao.value == '1'){
+
+        cMenor()
+
     }    
     
     else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '1'){
@@ -380,8 +384,7 @@ function cMaior(posicao) {
 
         apagar()
 
-        corda6[8].style.display = 'block'
-        corda6[8].style.backgroundColor = 'greenyellow'
+        pestanaF(8)
 
         corda5[10].style.display = 'block'
         corda5[10].style.backgroundColor = 'greenyellow'
@@ -392,11 +395,7 @@ function cMaior(posicao) {
         corda3[9].style.display = 'block'
         corda3[9].style.backgroundColor = 'greenyellow'
     
-        corda2[8].style.display = 'block'
-        corda2[8].style.backgroundColor = 'greenyellow'
-    
-        corda1[8].style.display = 'block'
-        corda1[8].style.backgroundColor = 'greenyellow'
+       
 
     } else if (posicao == 5){
 
@@ -417,6 +416,30 @@ function cMaior(posicao) {
         corda1[12].style.backgroundColor = 'greenyellow'
 
     }
+    
+}
+
+function cMenor(posicao) {
+
+    apagar()
+
+    pestanaF(3)
+
+    corda4[5].style.display = 'block'
+    corda4[5].style.backgroundColor = 'greenyellow'
+
+    corda3[5].style.display = 'block'
+    corda3[5].style.backgroundColor = 'greenyellow'
+
+    corda2[4].style.display = 'block'
+    corda2[4].style.backgroundColor = 'greenyellow'
+
+    corda6[3].style.display = 'block'
+    corda6[3].style.backgroundColor = 'gray'
+    corda6[3].innerHTML = 'X'
+
+    corda2[4].innerHTML = 'Eb'
+
     
 }
 
@@ -483,8 +506,11 @@ function dMaior(posicao) {
 
         apagar()
 
-        corda5[5].style.display = 'block'
-        corda5[5].style.backgroundColor = 'greenyellow'
+        pestanaF(5)
+
+        corda6[5].innerHTML = 'X'
+        corda6[5].style.display = 'block'
+        corda6[5].backgroundColor = 'gray'
     
         corda4[7].style.display = 'block'
         corda4[7].style.backgroundColor = 'greenyellow'
@@ -495,15 +521,15 @@ function dMaior(posicao) {
         corda2[7].style.display = 'block'
         corda2[7].style.backgroundColor = 'greenyellow'
     
-        corda1[5].style.display = 'block'
-        corda1[5].style.backgroundColor = 'greenyellow'
+        
 
     } else if (posicao == 4){
 
         apagar()
 
-        pestanaF(8)
-        
+    
+        corda6[10].style.display = 'block'
+        corda6[10].style.backgroundColor = 'greenyellow'
 
         corda5[9].style.display = 'block'
         corda5[9].style.backgroundColor = 'greenyellow'
@@ -513,6 +539,12 @@ function dMaior(posicao) {
     
         corda3[7].style.display = 'block'
         corda3[7].style.backgroundColor = 'greenyellow'
+        
+        corda2[7].style.display = 'block'
+        corda2[7].style.backgroundColor = 'greenyellow'
+        
+        corda1[10].style.display = 'block'
+        corda1[10].style.backgroundColor = 'greenyellow'
     
        
 
@@ -520,8 +552,7 @@ function dMaior(posicao) {
 
         apagar()
 
-        corda6[10].style.display = 'block'
-        corda6[10].style.backgroundColor = 'greenyellow'
+        pestanaF(10)
     
 
         corda5[12].style.display = 'block'
@@ -533,11 +564,9 @@ function dMaior(posicao) {
         corda3[11].style.display = 'block'
         corda3[11].style.backgroundColor = 'greenyellow'
     
-        corda2[10].style.display = 'block'
-        corda2[10].style.backgroundColor = 'greenyellow'
-    
-        corda1[10].style.display = 'block'
-        corda1[10].style.backgroundColor = 'greenyellow'
+        
+        
+        
 
     }
 
