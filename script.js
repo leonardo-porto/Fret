@@ -16,6 +16,7 @@ botao.style.display = 'none'
 input.style.display = 'none'
 
 
+
 //****************************************************************************************/
 
 botao0.onclick = function () {
@@ -46,7 +47,25 @@ botao0.onclick = function () {
 
         dMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '2'){
+
+        dMaior(2)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '3'){
+
+        dMaior(3)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '4'){
+
+        dMaior(4)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '5'){
+
+        dMaior(5)
+
+    }
+    
+    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '1'){
 
         eMaior()
 
@@ -440,6 +459,89 @@ function dMaior(posicao) {
 
     corda1[2].style.display = 'block'
     corda1[2].style.backgroundColor = 'greenyellow'
+
+    if (posicao == 2){
+
+        apagar()
+
+        corda5[5].style.display = 'block'
+        corda5[5].style.backgroundColor = 'greenyellow'
+    
+        corda4[4].style.display = 'block'
+        corda4[4].style.backgroundColor = 'greenyellow'
+    
+        corda3[2].style.display = 'block'
+        corda3[2].style.backgroundColor = 'greenyellow'
+    
+        corda2[3].style.display = 'block'
+        corda2[3].style.backgroundColor = 'greenyellow'
+    
+        corda1[2].style.display = 'block'
+        corda1[2].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 3){
+
+        apagar()
+
+        corda5[5].style.display = 'block'
+        corda5[5].style.backgroundColor = 'greenyellow'
+    
+        corda4[7].style.display = 'block'
+        corda4[7].style.backgroundColor = 'greenyellow'
+    
+        corda3[7].style.display = 'block'
+        corda3[7].style.backgroundColor = 'greenyellow'
+    
+        corda2[7].style.display = 'block'
+        corda2[7].style.backgroundColor = 'greenyellow'
+    
+        corda1[5].style.display = 'block'
+        corda1[5].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 4){
+
+        apagar()
+
+        pestanaF(8)
+        
+
+        corda5[9].style.display = 'block'
+        corda5[9].style.backgroundColor = 'greenyellow'
+    
+        corda4[7].style.display = 'block'
+        corda4[7].style.backgroundColor = 'greenyellow'
+    
+        corda3[7].style.display = 'block'
+        corda3[7].style.backgroundColor = 'greenyellow'
+    
+       
+
+    } else if (posicao == 5){
+
+        apagar()
+
+        corda6[10].style.display = 'block'
+        corda6[10].style.backgroundColor = 'greenyellow'
+    
+
+        corda5[12].style.display = 'block'
+        corda5[12].style.backgroundColor = 'greenyellow'
+    
+        corda4[12].style.display = 'block'
+        corda4[12].style.backgroundColor = 'greenyellow'
+    
+        corda3[11].style.display = 'block'
+        corda3[11].style.backgroundColor = 'greenyellow'
+    
+        corda2[10].style.display = 'block'
+        corda2[10].style.backgroundColor = 'greenyellow'
+    
+        corda1[10].style.display = 'block'
+        corda1[10].style.backgroundColor = 'greenyellow'
+
+    }
+
+
     
 }
 
@@ -515,8 +617,7 @@ function e7(posicao) {
 function fMaior(posicao) {
 
     apagar()
-    pestana.style.display = 'block'
-    pestana.style.left = '140px'
+    pestanaF(1)
 
     
 
@@ -583,9 +684,7 @@ function bMaior(posicao) {
 
     apagar()
 
-    pestana.style.display = 'block'
-    pestana.style.left = '220px'
-
+    pestanaF(2)
     corda4[4].style.display = 'block'
     corda4[4].style.backgroundColor = 'greenyellow'
 
@@ -679,9 +778,63 @@ let tetradeGm7b5 = ['G', 'Bb', 'Db', 'F']
 let tetradeGDim = ['G', 'Bb', 'Db', 'Fbb']
 let tetradeGm7M = ['G', 'Bb', 'D', 'F#']
 
+function pestanaF(casa) {
 
+    pestana.style.display = 'block'
 
+    if (casa == 1){
 
+        pestana.style.left = '150px'
+
+    } else if (casa == 2){
+
+        pestana.style.left = '230px'
+
+    } else if (casa == 3){
+
+        pestana.style.left = '310px'
+
+    } else if (casa == 4){
+
+        pestana.style.left = '390px'
+
+    } else if (casa == 5){
+
+        pestana.style.left = '470px'
+
+    } else if (casa == 6){
+
+        pestana.style.left = '550px'
+
+    } else if (casa == 7){
+
+        pestana.style.left = '630px'
+
+    } else if (casa == 8){
+
+        pestana.style.left = '710px'
+
+    } else if (casa == 9){
+
+        pestana.style.left = '790px'
+
+    } else if (casa == 10){
+
+        pestana.style.left = '870px'
+
+    } else if (casa == 11){
+
+        pestana.style.left = '950px'
+
+    } else if (casa == 12){
+
+        pestana.style.left = '1030px'
+
+    }
+    
+}
+
+bMaior()
 
 
 //*********************************************************************************************************/
