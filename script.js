@@ -14,18 +14,15 @@ let pestana = document.getElementById('pestana')
 botao.style.display = 'none'
 input.style.display = 'none'
 
+//tratando o código de incorporação e retirando apenas o src
+
 botao1.onclick = function () {
 
     let link = inputVideo.value
 
     let vetorLink = link.split(' ')
 
-    console.log(vetorLink[3])
-
     vetorLink = vetorLink[3].replace('src="', '')
-
-
-    console.log(vetorLink.slice(0, -1))
 
     video.src = vetorLink.slice(0, -1)
 
