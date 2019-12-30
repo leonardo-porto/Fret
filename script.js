@@ -11,6 +11,8 @@ let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
 let pestana = document.getElementById('pestana')
 
+
+
 botao.style.display = 'none'
 input.style.display = 'none'
 
@@ -55,6 +57,26 @@ botao0.onclick = function () {
     } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '5') {
 
         cMaior(5)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '1') {
+
+        cSMaior()
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '2') {
+
+        cSMaior(2)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '3') {
+
+        cSMaior(3)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '4') {
+
+        cSMaior(4)
+
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '5') {
+
+        cSMaior(5)
 
     } else if (estrutura.value == 'acorde' && tipo.value == 'menor' && tonalidade.value == 'c' && posicao.value == '1') {
 
@@ -234,6 +256,7 @@ let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_cas
 let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12, corda6_casa13, corda6_casa14, corda6_casa15]
 
 //******************************************************************************************************/
+console.log(corda1[0].textContent)
 
 let escalas = document.getElementById('escalas')
 let acordes = document.getElementById('acordes')
@@ -429,6 +452,115 @@ function cMaior(posicao) {
 
         corda1[12].style.display = 'block'
         corda1[12].style.backgroundColor = 'greenyellow'
+
+    }
+
+}
+
+function cSMaior(posicao) {
+
+
+
+    apagar()
+
+    corda5[4].style.display = 'block'
+    corda5[4].style.backgroundColor = 'greenyellow'
+
+    corda4[3].style.display = 'block'
+    corda4[3].style.backgroundColor = 'greenyellow'
+
+    corda4[3].innerHTML = 'E#'
+
+    corda3[1].style.display = 'block'
+    corda3[1].style.backgroundColor = 'greenyellow'
+
+    corda2[2].style.display = 'block'
+    corda2[2].style.backgroundColor = 'greenyellow'
+
+    corda1[1].style.display = 'block'
+    corda1[1].style.backgroundColor = 'greenyellow'
+
+    corda1[1].innerHTML = 'E#'
+
+    if (posicao == 2) {
+
+        apagar()
+
+        corda5[4].style.display = 'block'
+        corda5[4].style.backgroundColor = 'greenyellow'
+
+        corda4[6].style.display = 'block'
+        corda4[6].style.backgroundColor = 'greenyellow'
+
+        corda3[6].style.display = 'block'
+        corda3[6].style.backgroundColor = 'greenyellow'
+
+        corda2[6].style.display = 'block'
+        corda2[6].style.backgroundColor = 'greenyellow'
+        corda2[6].innerHTML = 'E#'
+
+        corda1[4].style.display = 'block'
+        corda1[4].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 3) {
+
+        apagar()
+
+        corda6[9].style.display = 'block'
+        corda6[9].style.backgroundColor = 'greenyellow'
+
+        corda5[8].style.display = 'block'
+        corda5[8].style.backgroundColor = 'greenyellow'
+        corda5[8].innerHTML = 'E#'
+
+        corda4[6].style.display = 'block'
+        corda4[6].style.backgroundColor = 'greenyellow'
+
+        corda3[6].style.display = 'block'
+        corda3[6].style.backgroundColor = 'greenyellow'
+
+        corda2[6].style.display = 'block'
+        corda2[6].style.backgroundColor = 'greenyellow'
+
+        corda1[9].style.display = 'block'
+        corda1[9].style.backgroundColor = 'greenyellow'
+
+    } else if (posicao == 4) {
+
+        apagar()
+
+        pestanaF(9)
+
+        corda5[11].style.display = 'block'
+        corda5[11].style.backgroundColor = 'greenyellow'
+
+        corda4[11].style.display = 'block'
+        corda4[11].style.backgroundColor = 'greenyellow'
+
+        corda3[10].style.display = 'block'
+        corda3[10].style.backgroundColor = 'greenyellow'
+        corda3[10].innerHTML = 'E#'
+
+
+
+    } else if (posicao == 5) {
+
+        apagar()
+
+
+
+        corda4[11].style.display = 'block'
+        corda4[11].style.backgroundColor = 'greenyellow'
+
+        corda3[13].style.display = 'block'
+        corda3[13].style.backgroundColor = 'greenyellow'
+
+        corda2[14].style.display = 'block'
+        corda2[14].style.backgroundColor = 'greenyellow'
+
+        corda1[13].style.display = 'block'
+        corda1[13].style.backgroundColor = 'greenyellow'
+        corda1[13].innerHTML = 'E#'
 
     }
 
@@ -878,8 +1010,1149 @@ function pestanaF(casa) {
 
 }
 
+function mostrarC() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'C'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
 
 
+        }
+        if (corda2[i].textContent == 'C'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'C'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'C'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'C'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'C'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarCS() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'C#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'C#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'C#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'C#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'C#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'C#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarDb() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'C#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            corda1[i].innerHTML = 'Db'
+            
+
+
+        }
+        if (corda2[i].textContent == 'C#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+            corda2[i].innerHTML = 'Db'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'C#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+            corda3[i].innerHTML = 'Db'
+           
+
+        }
+
+        if (corda4[i].textContent == 'C#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            corda4[i].innerHTML = 'Db'
+
+
+        }
+
+        if (corda5[i].textContent == 'C#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            corda5[i].innerHTML = 'Db'
+
+
+        }
+
+        if (corda6[i].textContent == 'C#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+            corda6[i].innerHTML = 'Db'
+
+
+        }
+
+
+    }
+    
+}
+
+
+function mostrarD() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'D'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'D'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'D'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'D'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'D'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'D'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarDS() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'D#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'D#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'D#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'D#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'D#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'D#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+function mostrarEb() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'D#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            corda1[i].innerHTML = 'Eb'
+            
+
+
+        }
+        if (corda2[i].textContent == 'D#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+            corda2[i].innerHTML = 'Eb'
+
+
+        }
+
+        if (corda3[i].textContent == 'D#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+            corda3[i].innerHTML = 'Eb'
+
+        }
+
+        if (corda4[i].textContent == 'D#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            corda4[i].innerHTML = 'Eb'
+
+
+        }
+
+        if (corda5[i].textContent == 'D#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            corda5[i].innerHTML = 'Eb'
+
+
+        }
+
+        if (corda6[i].textContent == 'D#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+            corda6[i].innerHTML = 'Eb'
+
+
+        }
+
+
+    }
+    
+}
+
+
+function mostrarE() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'E'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'E'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'E'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'E'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'E'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'E'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarF() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'F'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'F'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'F'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'F'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'F'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'F'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+function mostrarGb() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'F#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            corda1[i].innerHTML = 'Gb'
+            
+
+
+        }
+        if (corda2[i].textContent == 'F#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+            corda2[i].innerHTML = 'Gb'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'F#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+            corda3[i].innerHTML = 'Gb'
+
+        }
+
+        if (corda4[i].textContent == 'F#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            corda4[i].innerHTML = 'Gb'
+
+
+        }
+
+        if (corda5[i].textContent == 'F#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            corda5[i].innerHTML = 'Gb'
+
+
+        }
+
+        if (corda6[i].textContent == 'F#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+            corda6[i].innerHTML = 'Gb'
+
+
+        }
+
+
+    }
+    
+}
+
+
+function mostrarFS() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'F#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'F#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'F#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'F#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'F#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'F#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarG() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'G'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'G'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'G'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'G'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'G'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'G'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+function mostrarAb() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'G#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            corda1[i].innerHTML = 'Ab'
+
+
+        }
+        if (corda2[i].textContent == 'G#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+            corda2[i].innerHTML = 'Ab'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'G#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+            corda3[i].innerHTML = 'Ab'
+
+        }
+
+        if (corda4[i].textContent == 'G#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            corda4[i].innerHTML = 'Ab'
+
+
+        }
+
+        if (corda5[i].textContent == 'G#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            corda5[i].innerHTML = 'Ab'
+
+
+        }
+
+        if (corda6[i].textContent == 'G#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+            corda6[i].innerHTML = 'Ab'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarGS() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'G#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'G#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'G#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'G#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'G#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'G#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarA() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'A'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'A'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'A'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'A'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'A'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'A'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+function mostrarBb() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'A#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            corda1[i].innerHTML = 'Bb'
+            
+
+
+        }
+        if (corda2[i].textContent == 'A#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+            corda2[i].innerHTML = 'Bb'
+
+
+        }
+
+        if (corda3[i].textContent == 'A#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+            corda3[i].innerHTML = 'Bb'
+
+        }
+
+        if (corda4[i].textContent == 'A#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            corda4[i].innerHTML = 'Bb'
+
+
+        }
+
+        if (corda5[i].textContent == 'A#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            corda5[i].innerHTML = 'Bb'
+
+
+        }
+
+        if (corda6[i].textContent == 'A#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+            corda6[i].innerHTML = 'Bb'
+
+
+        }
+
+
+    }
+    
+}
+
+
+
+
+function mostrarAS() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'A#'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'A#'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'A#'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'A#'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'A#'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'A#'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+
+
+
+function mostrarB() {
+
+    for (i = 0; i < 16; i++){
+
+        if (corda1[i].textContent == 'B'){
+
+            corda1[i].style.display = 'block'
+            corda1[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+        if (corda2[i].textContent == 'B'){
+
+           
+            corda2[i].style.display = 'block'
+            corda2[i].style.backgroundColor = 'greenyellow'
+           
+
+
+        }
+
+        if (corda3[i].textContent == 'B'){
+
+           
+            corda3[i].style.display = 'block'
+            corda3[i].style.backgroundColor = 'greenyellow'
+           
+
+        }
+
+        if (corda4[i].textContent == 'B'){
+
+           
+            
+            corda4[i].style.display = 'block'
+            corda4[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda5[i].textContent == 'B'){
+
+           
+            corda5[i].style.display = 'block'
+            corda5[i].style.backgroundColor = 'greenyellow'
+            
+
+
+        }
+
+        if (corda6[i].textContent == 'B'){
+
+           
+            corda6[i].style.display = 'block'
+            corda6[i].style.backgroundColor = 'greenyellow'
+
+
+        }
+
+
+    }
+    
+}
+
+
+mostrarBb()
 
 //*********************************************************************************************************/
 
