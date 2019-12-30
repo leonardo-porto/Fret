@@ -3,10 +3,9 @@ let tipo = document.getElementById('tipo')
 let tonalidade = document.getElementById('tonalidade')
 let botao0 = document.getElementById('botao0')
 let posicao = document.getElementById('posicao')
-
-
-
-
+let video = document.getElementById('video')
+let inputVideo = document.getElementById('inputVideo')
+let botao1 = document.getElementById('botao1')
 let clear = document.getElementById('limpar')
 let mostrar = document.getElementById('mostrar')
 let botao = document.getElementById('botao')
@@ -15,94 +14,113 @@ let pestana = document.getElementById('pestana')
 botao.style.display = 'none'
 input.style.display = 'none'
 
+botao1.onclick = function () {
+
+    let link = inputVideo.value
+
+    let vetorLink = link.split(' ')
+
+    console.log(vetorLink[3])
+
+    vetorLink = vetorLink[3].replace('src="', '')
+
+
+    console.log(vetorLink.slice(0, -1))
+
+    video.src = vetorLink.slice(0, -1)
+
+
+}
+
+
 
 
 //****************************************************************************************/
 
 botao0.onclick = function () {
 
-    if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '1'){
+    if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '1') {
 
         cMaior()
 
-    }  else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '2'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '2') {
 
         cMaior(2)
 
-    }  else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '3'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '3') {
 
         cMaior(3)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '4'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '4') {
 
         cMaior(4)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '5'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '5') {
 
         cMaior(5)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'menor' && tonalidade.value == 'c' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'menor' && tonalidade.value == 'c' && posicao.value == '1') {
 
         cMenor()
 
-    }    
-    
-    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '1'){
+    }
+
+    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '1') {
 
         dMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '2'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '2') {
 
         dMaior(2)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '3'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '3') {
 
         dMaior(3)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '4'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '4') {
 
         dMaior(4)
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '5'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '5') {
 
         dMaior(5)
 
     }
-    
-    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '1'){
+
+    else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '1') {
 
         eMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'f' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'f' && posicao.value == '1') {
 
         fMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'g' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'g' && posicao.value == '1') {
 
         gMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'a' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'a' && posicao.value == '1') {
 
         aMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'b' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == 'maior' && tonalidade.value == 'b' && posicao.value == '1') {
 
         bMaior()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'c' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'c' && posicao.value == '1') {
 
         c7()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'd' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'd' && posicao.value == '1') {
 
         d7()
 
-    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'e' && posicao.value == '1'){
+    } else if (estrutura.value == 'acorde' && tipo.value == '7' && tonalidade.value == 'e' && posicao.value == '1') {
 
         e7()
 
-    } 
-    
+    }
+
 }
 
 
@@ -220,32 +238,32 @@ let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_cas
 
 //******************************************************************************************************/
 
-let escalas = document.getElementById ('escalas')
-let acordes = document.getElementById ('acordes')
-let arpejos = document.getElementById ('arpejos')
-let quadroEscalas = document.getElementById ('quadroEscalas')
-let quadroAcordes = document.getElementById ('quadroAcordes')
-let quadroArpejos = document.getElementById ('quadroArpejos')
+let escalas = document.getElementById('escalas')
+let acordes = document.getElementById('acordes')
+let arpejos = document.getElementById('arpejos')
+let quadroEscalas = document.getElementById('quadroEscalas')
+let quadroAcordes = document.getElementById('quadroAcordes')
+let quadroArpejos = document.getElementById('quadroArpejos')
 
 quadroEscalas.onmouseleave = function () {
 
     quadroEscalas.style.display = 'none'
     escalas.style.backgroundColor = 'rgb(112, 112, 112)'
-    
+
 }
 
 quadroAcordes.onmouseleave = function () {
 
     quadroAcordes.style.display = 'none'
     acordes.style.backgroundColor = 'rgb(112, 112, 112)'
-    
+
 }
 
 quadroArpejos.onmouseleave = function () {
 
     quadroArpejos.style.display = 'none'
     arpejos.style.backgroundColor = 'rgb(112, 112, 112)'
-    
+
 }
 
 acordes.onmouseover = function () {
@@ -256,8 +274,8 @@ acordes.onmouseover = function () {
     escalas.style.backgroundColor = 'rgb(112, 112, 112)'
 
     quadroArpejos.style.display = 'none'
-    quadroEscalas.style.display = 'none'   
-    
+    quadroEscalas.style.display = 'none'
+
 }
 
 arpejos.onmouseover = function () {
@@ -268,8 +286,8 @@ arpejos.onmouseover = function () {
     acordes.style.backgroundColor = 'rgb(112, 112, 112)'
 
     quadroAcordes.style.display = 'none'
-    quadroEscalas.style.display = 'none'  
-    
+    quadroEscalas.style.display = 'none'
+
 }
 
 escalas.onmouseover = function () {
@@ -281,16 +299,16 @@ escalas.onmouseover = function () {
 
     quadroArpejos.style.display = 'none'
     quadroAcordes.style.display = 'none'
-    
+
 }
 
 
 clear.onclick = function limpar() {
 
     pestana.style.display = 'none'
-    
-    
-    for (i = 0; i < 16; i++){
+
+
+    for (i = 0; i < 16; i++) {
 
         corda1[i].style.display = 'none'
         corda2[i].style.display = 'none'
@@ -299,14 +317,14 @@ clear.onclick = function limpar() {
         corda5[i].style.display = 'none'
         corda6[i].style.display = 'none'
 
-    }    
+    }
 }
 
 
 mostrar.onclick = function mostrar() {
-    
-    
-    for (i = 0; i < 16; i++){
+
+
+    for (i = 0; i < 16; i++) {
 
         corda1[i].style.display = 'block'
         corda2[i].style.display = 'block'
@@ -315,13 +333,13 @@ mostrar.onclick = function mostrar() {
         corda5[i].style.display = 'block'
         corda6[i].style.display = 'block'
 
-    }    
+    }
 }
 //************************************************************************************************** */
 function cMaior(posicao) {
 
-    
-    
+
+
     apagar()
 
     corda5[3].style.display = 'block'
@@ -339,26 +357,26 @@ function cMaior(posicao) {
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
 
-    if (posicao == 2){
+    if (posicao == 2) {
 
         apagar()
 
         corda5[3].style.display = 'block'
         corda5[3].style.backgroundColor = 'greenyellow'
-    
+
         corda4[5].style.display = 'block'
         corda4[5].style.backgroundColor = 'greenyellow'
-    
+
         corda3[5].style.display = 'block'
         corda3[5].style.backgroundColor = 'greenyellow'
-    
+
         corda2[5].style.display = 'block'
         corda2[5].style.backgroundColor = 'greenyellow'
-    
+
         corda1[3].style.display = 'block'
         corda1[3].style.backgroundColor = 'greenyellow'
 
-    } else if (posicao == 3){
+    } else if (posicao == 3) {
 
         apagar()
 
@@ -367,20 +385,20 @@ function cMaior(posicao) {
 
         corda5[7].style.display = 'block'
         corda5[7].style.backgroundColor = 'greenyellow'
-    
+
         corda4[5].style.display = 'block'
         corda4[5].style.backgroundColor = 'greenyellow'
-    
+
         corda3[5].style.display = 'block'
         corda3[5].style.backgroundColor = 'greenyellow'
-    
+
         corda2[5].style.display = 'block'
         corda2[5].style.backgroundColor = 'greenyellow'
-    
+
         corda1[8].style.display = 'block'
         corda1[8].style.backgroundColor = 'greenyellow'
 
-    } else if (posicao == 4){
+    } else if (posicao == 4) {
 
         apagar()
 
@@ -388,35 +406,35 @@ function cMaior(posicao) {
 
         corda5[10].style.display = 'block'
         corda5[10].style.backgroundColor = 'greenyellow'
-    
+
         corda4[10].style.display = 'block'
         corda4[10].style.backgroundColor = 'greenyellow'
-    
+
         corda3[9].style.display = 'block'
         corda3[9].style.backgroundColor = 'greenyellow'
-    
-       
 
-    } else if (posicao == 5){
+
+
+    } else if (posicao == 5) {
 
         apagar()
 
-       
-    
+
+
         corda4[10].style.display = 'block'
         corda4[10].style.backgroundColor = 'greenyellow'
-    
+
         corda3[12].style.display = 'block'
         corda3[12].style.backgroundColor = 'greenyellow'
-    
+
         corda2[13].style.display = 'block'
         corda2[13].style.backgroundColor = 'greenyellow'
-    
+
         corda1[12].style.display = 'block'
         corda1[12].style.backgroundColor = 'greenyellow'
 
     }
-    
+
 }
 
 function cMenor(posicao) {
@@ -440,7 +458,7 @@ function cMenor(posicao) {
 
     corda2[4].innerHTML = 'Eb'
 
-    
+
 }
 
 //************************************************************************************************** */
@@ -461,8 +479,8 @@ function c7(posicao) {
     corda2[1].style.display = 'block'
     corda2[1].style.backgroundColor = 'greenyellow'
 
-    
-    
+
+
 }
 
 //********************************************************************************************** */
@@ -483,26 +501,26 @@ function dMaior(posicao) {
     corda1[2].style.display = 'block'
     corda1[2].style.backgroundColor = 'greenyellow'
 
-    if (posicao == 2){
+    if (posicao == 2) {
 
         apagar()
 
         corda5[5].style.display = 'block'
         corda5[5].style.backgroundColor = 'greenyellow'
-    
+
         corda4[4].style.display = 'block'
         corda4[4].style.backgroundColor = 'greenyellow'
-    
+
         corda3[2].style.display = 'block'
         corda3[2].style.backgroundColor = 'greenyellow'
-    
+
         corda2[3].style.display = 'block'
         corda2[3].style.backgroundColor = 'greenyellow'
-    
+
         corda1[2].style.display = 'block'
         corda1[2].style.backgroundColor = 'greenyellow'
 
-    } else if (posicao == 3){
+    } else if (posicao == 3) {
 
         apagar()
 
@@ -511,67 +529,67 @@ function dMaior(posicao) {
         corda6[5].innerHTML = 'X'
         corda6[5].style.display = 'block'
         corda6[5].backgroundColor = 'gray'
-    
+
         corda4[7].style.display = 'block'
         corda4[7].style.backgroundColor = 'greenyellow'
-    
+
         corda3[7].style.display = 'block'
         corda3[7].style.backgroundColor = 'greenyellow'
-    
+
         corda2[7].style.display = 'block'
         corda2[7].style.backgroundColor = 'greenyellow'
-    
-        
 
-    } else if (posicao == 4){
+
+
+    } else if (posicao == 4) {
 
         apagar()
 
-    
+
         corda6[10].style.display = 'block'
         corda6[10].style.backgroundColor = 'greenyellow'
 
         corda5[9].style.display = 'block'
         corda5[9].style.backgroundColor = 'greenyellow'
-    
+
         corda4[7].style.display = 'block'
         corda4[7].style.backgroundColor = 'greenyellow'
-    
+
         corda3[7].style.display = 'block'
         corda3[7].style.backgroundColor = 'greenyellow'
-        
+
         corda2[7].style.display = 'block'
         corda2[7].style.backgroundColor = 'greenyellow'
-        
+
         corda1[10].style.display = 'block'
         corda1[10].style.backgroundColor = 'greenyellow'
-    
-       
 
-    } else if (posicao == 5){
+
+
+    } else if (posicao == 5) {
 
         apagar()
 
         pestanaF(10)
-    
+
 
         corda5[12].style.display = 'block'
         corda5[12].style.backgroundColor = 'greenyellow'
-    
+
         corda4[12].style.display = 'block'
         corda4[12].style.backgroundColor = 'greenyellow'
-    
+
         corda3[11].style.display = 'block'
         corda3[11].style.backgroundColor = 'greenyellow'
-    
-        
-        
-        
+
+
+
+
 
     }
 
 
-    
+
 }
 
 //*************************************************************************************** */
@@ -591,7 +609,7 @@ function d7(posicao) {
 
     corda1[2].style.display = 'block'
     corda1[2].style.backgroundColor = 'greenyellow'
-    
+
 }
 
 function eMaior(posicao) {
@@ -615,7 +633,7 @@ function eMaior(posicao) {
 
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
-    
+
 }
 
 //************************************************************************************** */
@@ -640,7 +658,7 @@ function e7(posicao) {
 
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
-    
+
 }
 
 function fMaior(posicao) {
@@ -648,7 +666,7 @@ function fMaior(posicao) {
     apagar()
     pestanaF(1)
 
-    
+
 
     corda5[3].style.display = 'block'
     corda5[3].style.backgroundColor = 'greenyellow'
@@ -659,8 +677,8 @@ function fMaior(posicao) {
     corda3[2].style.display = 'block'
     corda3[2].style.backgroundColor = 'greenyellow'
 
-   
-    
+
+
 }
 
 function gMaior(posicao) {
@@ -685,7 +703,7 @@ function gMaior(posicao) {
     corda1[3].style.display = 'block'
     corda1[3].style.backgroundColor = 'greenyellow'
 
-    
+
 }
 
 function aMaior(posicao) {
@@ -706,7 +724,7 @@ function aMaior(posicao) {
 
     corda1[0].style.display = 'block'
     corda1[0].style.backgroundColor = 'greenyellow'
-    
+
 }
 
 function bMaior(posicao) {
@@ -721,7 +739,7 @@ function bMaior(posicao) {
     corda3[4].style.backgroundColor = 'greenyellow'
 
     corda2[4].style.display = 'block'
-    corda2[4].style.backgroundColor = 'greenyellow'    
+    corda2[4].style.backgroundColor = 'greenyellow'
 }
 
 
@@ -729,7 +747,7 @@ function apagar() {
 
     pestana.style.display = 'none'
 
-    for (i = 0; i < 16; i++){
+    for (i = 0; i < 16; i++) {
 
         corda1[i].style.display = 'none'
         corda2[i].style.display = 'none'
@@ -738,21 +756,21 @@ function apagar() {
         corda5[i].style.display = 'none'
         corda6[i].style.display = 'none'
 
-    }  
-    
+    }
+
 }
 
 apagar()
 //**************************************************************************************************/
 
 let bracoGuitarra = [
-[], 
-['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'], 
-['B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'], 
-['G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G'], 
-['D', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D'],
-['A', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A'],
-['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E']]
+    [],
+    ['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'],
+    ['B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'],
+    ['G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G'],
+    ['D', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D'],
+    ['A', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A'],
+    ['E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E']]
 
 console.log(bracoGuitarra[2][0])
 
@@ -811,56 +829,56 @@ function pestanaF(casa) {
 
     pestana.style.display = 'block'
 
-    if (casa == 1){
+    if (casa == 1) {
 
         pestana.style.left = '150px'
 
-    } else if (casa == 2){
+    } else if (casa == 2) {
 
         pestana.style.left = '230px'
 
-    } else if (casa == 3){
+    } else if (casa == 3) {
 
         pestana.style.left = '310px'
 
-    } else if (casa == 4){
+    } else if (casa == 4) {
 
         pestana.style.left = '390px'
 
-    } else if (casa == 5){
+    } else if (casa == 5) {
 
         pestana.style.left = '470px'
 
-    } else if (casa == 6){
+    } else if (casa == 6) {
 
         pestana.style.left = '550px'
 
-    } else if (casa == 7){
+    } else if (casa == 7) {
 
         pestana.style.left = '630px'
 
-    } else if (casa == 8){
+    } else if (casa == 8) {
 
         pestana.style.left = '710px'
 
-    } else if (casa == 9){
+    } else if (casa == 9) {
 
         pestana.style.left = '790px'
 
-    } else if (casa == 10){
+    } else if (casa == 10) {
 
         pestana.style.left = '870px'
 
-    } else if (casa == 11){
+    } else if (casa == 11) {
 
         pestana.style.left = '950px'
 
-    } else if (casa == 12){
+    } else if (casa == 12) {
 
         pestana.style.left = '1030px'
 
     }
-    
+
 }
 
 
