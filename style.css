@@ -4,6 +4,17 @@
     margin-top: 0;
 }
 
+
+
+h1{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
 #botao1 {
 
     height: 30px;
@@ -107,12 +118,12 @@ h2{
 
 #pestana {
 
-    background-color:greenyellow;
-    height: 270px;
+    background-color:rgb(11, 11, 88);
+    height: 263px;
     width: 15px;
     border-radius: 5px;
     position: absolute;
-    top: 93px;
+    top: 95px;
     display: none;
 }
 
@@ -200,7 +211,7 @@ h2{
 
 body{
 
-    background-color: whitesmoke;
+    background-color: rgb(236, 236, 236);
 }
 
 #corda1 {
@@ -1838,29 +1849,69 @@ body{
 #botao{
 
     height: 50px;
-    width: 400px;
+    width: 50px;
     font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
     top: 470px;
     left: 600px;
-    border-radius: 10px;
     background-color:rgb(65, 65, 102);
     color: wheat;
     font-weight: bold;
     
 }
 
+#corda1_casa0:hover, #corda1_casa1:hover, #corda1_casa2:hover, #corda1_casa3:hover, #corda1_casa4:hover, #corda1_casa5:hover, #corda1_casa6:hover, #corda1_casa7:hover, #corda1_casa8:hover, #corda1_casa9:hover, #corda1_casa10:hover, #corda1_casa11:hover, #corda1_casa12:hover, #corda1_casa13:hover, #corda1_casa14:hover, #corda1_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+#corda2_casa0:hover, #corda2_casa1:hover, #corda2_casa2:hover, #corda2_casa3:hover, #corda2_casa4:hover, #corda2_casa5:hover, #corda2_casa6:hover, #corda2_casa7:hover, #corda2_casa8:hover, #corda2_casa9:hover, #corda2_casa10:hover, #corda2_casa11:hover, #corda2_casa12:hover, #corda2_casa13:hover, #corda2_casa14:hover, #corda2_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+#corda3_casa0:hover, #corda3_casa1:hover, #corda3_casa2:hover, #corda3_casa3:hover, #corda3_casa4:hover, #corda3_casa5:hover, #corda3_casa6:hover, #corda3_casa7:hover, #corda3_casa8:hover, #corda3_casa9:hover, #corda3_casa10:hover, #corda3_casa11:hover, #corda3_casa12:hover, #corda3_casa13:hover, #corda3_casa14:hover, #corda3_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+
+
+#corda6_casa0:hover, #corda6_casa1:hover, #corda6_casa2:hover, #corda6_casa3:hover, #corda6_casa4:hover, #corda6_casa5:hover, #corda6_casa6:hover, #corda6_casa7:hover, #corda6_casa8:hover, #corda6_casa9:hover, #corda6_casa10:hover, #corda6_casa11:hover, #corda6_casa12:hover, #corda6_casa13:hover, #corda6_casa14:hover, #corda6_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+#corda4_casa0:hover, #corda4_casa1:hover, #corda4_casa2:hover, #corda4_casa3:hover, #corda4_casa4:hover, #corda4_casa5:hover, #corda4_casa6:hover, #corda4_casa7:hover, #corda4_casa8:hover, #corda4_casa9:hover, #corda4_casa10:hover, #corda4_casa11:hover, #corda4_casa12:hover, #corda4_casa13:hover, #corda4_casa14:hover, #corda4_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+#corda5_casa0:hover, #corda5_casa1:hover, #corda5_casa2:hover, #corda5_casa3:hover, #corda5_casa4:hover, #corda5_casa5:hover, #corda5_casa6:hover, #corda5_casa7:hover, #corda5_casa8:hover, #corda5_casa9:hover, #corda5_casa10:hover, #corda5_casa11:hover, #corda5_casa12:hover, #corda5_casa13:hover, #corda5_casa14:hover, #corda5_casa15:hover {
+
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+
+
+
+
 #botao0{
 
-    height: 50px;
-    width: 200px;
+    height: 52px;
+    width: 50px;
     font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 9px;
-    right: 20px;
-    border-radius: 10px;
+    top: 509px;
+    right: 291px;
     background-color:rgb(65, 65, 102);
     color: wheat;
     font-weight: bold;
@@ -1943,56 +1994,56 @@ body{
 
     background-color: rgb(44, 155, 230);
     position: absolute;
-    top: 9px;
-    left: 740px;
+    top: 510px;
+    left: 700px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    
 }
 
 #estrutura {
 
     background-color: purple;
     position: absolute;
-    top: 9px;
+    top: 510px;
     left: 400px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    
 }
 
 #posicao {
 
     background-color: royalblue;
     position: absolute;
-    top: 9px;
-    left: 880px;
+    top: 510px;
+    left: 828px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    
 }
 
 #tipo {
 
     background-color: gray;
     position: absolute;
-    top: 9px;
-    left: 530px;
+    top: 510px;
+    left: 510px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    
 }
 
 option:hover{

@@ -13,6 +13,8 @@ let pestana = document.getElementById('pestana')
 
 
 
+
+
 botao.style.display = 'none'
 input.style.display = 'none'
 
@@ -256,6 +258,14 @@ let corda5 = [corda5_casa0, corda5_casa1, corda5_casa2, corda5_casa3, corda5_cas
 let corda6 = [corda6_casa0, corda6_casa1, corda6_casa2, corda6_casa3, corda6_casa4, corda6_casa5, corda6_casa6, corda6_casa7, corda6_casa8, corda6_casa9, corda6_casa10, corda6_casa11, corda6_casa12, corda6_casa13, corda6_casa14, corda6_casa15]
 
 //******************************************************************************************************/
+
+
+    
+
+
+
+
+
 console.log(corda1[0].textContent)
 
 let escalas = document.getElementById('escalas')
