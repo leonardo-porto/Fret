@@ -140,7 +140,39 @@ botao0.onclick = function () {
 
         e7()
 
-    }
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'c' && posicao.value == '6') {
+
+        escalaCMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'd' && posicao.value == '6') {
+
+        escalaDMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'e' && posicao.value == '6') {
+
+        escalaEMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'f' && posicao.value == '6') {
+
+        escalaFMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'g' && posicao.value == '6') {
+
+        escalaGMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'a' && posicao.value == '6') {
+
+        escalaAMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'b' && posicao.value == '6') {
+
+        escalaBMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'f' && posicao.value == '6') {
+
+        escalaFMaiorF()
+
+    } 
 
 }
 
@@ -2160,6 +2192,98 @@ function mostrarB() {
     }
     
 }
+
+function escalaCMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarD()
+    mostrarE()
+    mostrarF()
+    mostrarG()
+    mostrarA()
+    mostrarB()
+    
+}
+
+function escalaGMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarD()
+    mostrarE()
+    mostrarFS()
+    mostrarG()
+    mostrarA()
+    mostrarB()
+    
+}
+
+function escalaDMaiorF() {
+
+    apagar()
+    mostrarCS()
+    mostrarD()
+    mostrarE()
+    mostrarFS()
+    mostrarG()
+    mostrarA()
+    mostrarB()
+    
+}
+
+function escalaAMaiorF() {
+
+    apagar()
+    mostrarCS()
+    mostrarD()
+    mostrarE()
+    mostrarFS()
+    mostrarGS()
+    mostrarA()
+    mostrarB()
+    
+}
+
+function escalaEMaiorF() {
+
+    apagar()
+    mostrarCS()
+    mostrarDS()
+    mostrarE()
+    mostrarFS()
+    mostrarGS()
+    mostrarA()
+    mostrarB()
+    
+}
+
+function escalaBMaiorF() {
+
+    apagar()
+    mostrarCS()
+    mostrarDS()
+    mostrarE()
+    mostrarFS()
+    mostrarGS()
+    mostrarAS()
+    mostrarB()
+    
+}
+
+function escalaFMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarD()
+    mostrarE()
+    mostrarF()
+    mostrarG()
+    mostrarA()
+    mostrarBb()
+    
+}
+
 
 
 
