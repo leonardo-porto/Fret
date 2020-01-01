@@ -383,6 +383,8 @@ clear.onclick = function limpar() {
 }
 
 
+
+
 mostrar.onclick = function mostrar() {
 
 
@@ -394,6 +396,9 @@ mostrar.onclick = function mostrar() {
         corda4[i].style.display = 'block'
         corda5[i].style.display = 'block'
         corda6[i].style.display = 'block'
+
+       
+       
 
     }
 }
@@ -2285,6 +2290,16 @@ function escalaFMaiorF() {
 }
 
 
+for(i = 0; i < 16; i++){
+
+    corda1[i].style.transition = 'all 1s'
+    corda2[i].style.transition = 'all 1s'
+    corda3[i].style.transition = 'all 1s'
+    corda4[i].style.transition = 'all 1s'
+    corda5[i].style.transition = 'all 1s'
+    corda6[i].style.transition = 'all 1s'
+
+}
 
 
 

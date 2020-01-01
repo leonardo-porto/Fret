@@ -12,6 +12,7 @@ h1{
     text-align: center;
     font-size: 30px;
     margin-top: 10px;
+    transition: all 2s;
 }
 
 
@@ -223,9 +224,35 @@ body{
     height: 2px;
     width: 1200px;
     position: absolute;
-    top: 100px
-       
+    top: 100px;
+    transition: all 2s;
+          
 
+}
+
+#corda1:hover{
+
+    background-color:yellow;
+}
+#corda6:hover{
+
+    background-color:yellow;
+}
+#corda2:hover{
+
+    background-color:rgb(139, 14, 133);
+}
+#corda3:hover{
+
+    background-color:rgb(0, 225, 255);
+}
+#corda4:hover{
+
+    background-color:rgb(255, 174, 0);
+}
+#corda5:hover{
+
+    background-color:rgb(11, 24, 204);
 }
 
 
@@ -234,6 +261,7 @@ body{
     
     left: 50px;
     border-radius: 5px;
+    transition: all 2s;
     background-color: black;
     height: 3px;
     width: 1200px;
@@ -249,6 +277,7 @@ body{
     background-color: black;
     height: 4px;
     width: 1200px;
+    transition: all 2s;
     position: absolute;
     top: 200px   
 
@@ -260,6 +289,7 @@ body{
     border-radius: 5px;
     background-color: black;
     height: 5px;
+    transition: all 2s;
     width: 1200px;
     position: absolute;
     top: 250px   
@@ -269,6 +299,7 @@ body{
 #corda5 {
     
     left: 50px;
+    transition: all 2s;
     border-radius: 5px;
     background-color: black;
     height: 6px;
@@ -281,6 +312,7 @@ body{
 #corda6 {
     
     left: 50px;
+    transition: all 2s;
     border-radius: 5px;
     background-color: black;
     height: 7px;
@@ -294,6 +326,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -304,6 +337,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -315,6 +349,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -322,10 +357,13 @@ body{
 
 }
 
+
+
 #traste4 {
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -337,6 +375,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -348,6 +387,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -359,6 +399,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -370,6 +411,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -382,6 +424,7 @@ body{
     background-color: gray;
     height: 250px;
     width: 3px;
+    transition: all 2s;
     position: absolute;
     top: 100px;
     left: 760px;
@@ -394,6 +437,7 @@ body{
     height: 250px;
     width: 3px;
     position: absolute;
+    transition: all 2s;
     top: 100px;
     left: 840px;
 
@@ -404,6 +448,7 @@ body{
     background-color: gray;
     height: 250px;
     width: 3px;
+    transition: all 2s;
     position: absolute;
     top: 100px;
     left: 920px;
@@ -414,6 +459,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -425,6 +471,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -436,6 +483,7 @@ body{
 
     background-color: gray;
     height: 250px;
+    transition: all 2s;
     width: 3px;
     position: absolute;
     top: 100px;
@@ -448,6 +496,7 @@ body{
     background-color: gray;
     height: 250px;
     width: 3px;
+    transition: all 2s;
     position: absolute;
     top: 100px;
     left: 1240px;
@@ -466,7 +515,11 @@ body{
     position: absolute;
     top: 330px;
     left: 60px;
+    transition: all 2s;
+    
 }
+
+
 
 #corda6_casa1{
 
@@ -480,6 +533,7 @@ body{
     position: absolute;
     top: 330px;
     left: 140px;
+    transition: all 2s;
 }
 
 #corda6_casa2{
@@ -488,6 +542,7 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
+    transition: all 2s;
     width: 20px;
     border-radius: 20px;
     padding: 10px;
@@ -500,6 +555,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -514,6 +570,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -528,6 +585,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -542,6 +600,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -556,6 +615,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -570,6 +630,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -584,6 +645,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -601,6 +663,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
+    transition: all 2s;
     border-radius: 20px;
     padding: 10px;
     position: absolute;
@@ -615,6 +678,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
+    transition: all 2s;
     border-radius: 20px;
     padding: 10px;
     position: absolute;
@@ -628,6 +692,7 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
+    transition: all 2s;
     width: 20px;
     border-radius: 20px;
     padding: 10px;
@@ -642,6 +707,7 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
+    transition: all 2s;
     width: 20px;
     border-radius: 20px;
     padding: 10px;
@@ -654,6 +720,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -668,6 +735,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -682,6 +750,7 @@ body{
 
     background-color: gray;
     font-size: 20px;
+    transition: all 2s;
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
     width: 20px;
@@ -1807,14 +1876,15 @@ body{
     padding: 10px;
     position: absolute;
     top: 400px;
-
-
-
+    transition: all 1s;
 }
 
 #limpar:hover {
 
     cursor: pointer;
+    background-color: rgb(17, 140, 156);
+    font-weight: bold;
+    color: white;
 }
 
 #mostrar {
@@ -1824,6 +1894,7 @@ body{
     width: 200px;
     font-size: 30px;
     padding: 10px;
+    transition: all 1s;
     
     position: absolute;
     top: 400px;
@@ -1836,6 +1907,10 @@ body{
 #mostrar:hover {
 
     cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(109, 145, 38);
+}
 }
 
 #input {
@@ -2008,7 +2083,16 @@ body{
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s;
     
+}
+
+#tonalidade:hover {
+
+    background-color: rgb(31, 109, 161);
+    color: black;
+
+
 }
 
 #estrutura {
@@ -2022,7 +2106,19 @@ body{
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 2s;
     
+}
+
+#estrutura:hover{
+
+    font-weight: bold;
+    color: white;
+    background-color: rgb(83, 1, 83);
+    color: grey;
+
+
+
 }
 
 #posicao {
@@ -2036,7 +2132,16 @@ body{
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s;
     
+}
+
+#posicao:hover{
+
+    background-color: rgb(38, 65, 146);
+    color: grey;
+
+
 }
 
 #tipo {
@@ -2050,6 +2155,14 @@ body{
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s;
+    
+}
+
+#tipo:hover{
+
+    background-color: rgb(77, 75, 75);
+    color: black;
     
 }
 
