@@ -172,6 +172,26 @@ botao0.onclick = function () {
 
         escalaFMaiorF()
 
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'as' && posicao.value == '6') {
+
+        escalaBbMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'ds' && posicao.value == '6') {
+
+        escalaEbMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'gs' && posicao.value == '6') {
+
+        escalaAbMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'cs' && posicao.value == '6') {
+
+        escalaDbMaiorF()
+
+    } else if (estrutura.value == 'escala' && tipo.value == 'maior' && tonalidade.value == 'fs' && posicao.value == '6') {
+
+        escalaGbMaiorF()
+
     } 
 
 }
@@ -388,6 +408,8 @@ clear.onclick = function limpar() {
 mostrar.onclick = function mostrar() {
 
 
+
+
     for (i = 0; i < 16; i++) {
 
         corda1[i].style.display = 'block'
@@ -395,10 +417,7 @@ mostrar.onclick = function mostrar() {
         corda3[i].style.display = 'block'
         corda4[i].style.display = 'block'
         corda5[i].style.display = 'block'
-        corda6[i].style.display = 'block'
-
-       
-       
+        corda6[i].style.display = 'block'      
 
     }
 }
@@ -2288,6 +2307,75 @@ function escalaFMaiorF() {
     mostrarBb()
     
 }
+
+function escalaBbMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarD()
+    mostrarEb()
+    mostrarF()
+    mostrarG()
+    mostrarA()
+    mostrarBb()
+    
+}
+
+function escalaEbMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarD()
+    mostrarEb()
+    mostrarF()
+    mostrarG()
+    mostrarAb()
+    mostrarBb()
+    
+}
+
+function escalaDbMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarDb()
+    mostrarEb()
+    mostrarF()
+    mostrarGb()
+    mostrarAb()
+    mostrarBb()
+    
+}
+
+function escalaGbMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarDb()
+    mostrarEb()
+    mostrarF()
+    mostrarGb()
+    mostrarAb()
+    mostrarBb()
+    
+}
+
+function escalaAbMaiorF() {
+
+    apagar()
+    mostrarC()
+    mostrarDb()
+    mostrarEb()
+    mostrarF()
+    mostrarG()
+    mostrarAb()
+    mostrarBb()
+    
+}
+
+
+
+
 
 
 for(i = 0; i < 16; i++){

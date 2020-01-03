@@ -14,7 +14,7 @@ h1{
     border-radius: 5px;
     position: absolute;
     bottom: 14px;
-    left: 220px;
+    left: 260px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -23,6 +23,17 @@ h1{
 
     position: absolute;
     top: 560px;
+}
+
+#fret{
+
+    height: 460px;
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    width: 1450px;
+    z-index: -5;
+    opacity: 0.9;
 }
 
 h2{
@@ -39,6 +50,8 @@ h2{
     position: absolute;
     bottom: 10px;
     width: 200px;
+    margin-left: 30px;
+
 }
 .menu {
 
@@ -1994,7 +2007,7 @@ body{
     background-color: rgb(44, 155, 230);
     position: absolute;
     top: 400px;
-    left: 640px;
+    left: 670px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -2036,7 +2049,7 @@ body{
     background-color: gray;
     position: absolute;
     top: 400px;
-    left: 450px;
+    left: 480px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
