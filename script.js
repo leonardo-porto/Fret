@@ -197,6 +197,8 @@ botao0.onclick = function () {
 }
 
 
+
+
 //******************************************************************************************************* */
 let corda1_casa0 = document.getElementById('corda1_casa0')
 let corda1_casa1 = document.getElementById('corda1_casa1')
@@ -941,6 +943,7 @@ function bMaior(posicao) {
 function apagar() {
 
     pestana.style.display = 'none'
+    moldura.style.display = 'none'
 
     for (i = 0; i < 16; i++) {
 
@@ -2388,7 +2391,6 @@ for(i = 0; i < 16; i++){
     corda6[i].style.transition = 'all 1s'
 
 }
-
 
 
 //*********************************************************************************************************/

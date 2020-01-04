@@ -2179,3 +2179,15 @@ option:hover{
 
 
 }
+
+#moldura {
+
+    border: 2px black solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    z-index: 5;
+    background-color: gainsboro;
+}
