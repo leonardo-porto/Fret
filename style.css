@@ -225,7 +225,7 @@ body{
     width: 1200px;
     position: absolute;
     top: 100px;
-    
+    transition: all 2s;
           
 
 }
@@ -261,8 +261,14 @@ body{
     
     left: 50px;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color:  rgb(87, 84, 84);
     height: 4px;
+=======
+    transition: all 2s;
+    background-color: black;
+    height: 3px;
+>>>>>>> parent of 729bcf0... small update
     width: 1200px;
     position: absolute;
     top: 150px   
@@ -276,6 +282,7 @@ body{
     background-color:  rgb(87, 84, 84);
     height: 5px;
     width: 1200px;
+    transition: all 2s;
     position: absolute;
     top: 200px   
 
@@ -285,8 +292,14 @@ body{
     
     left: 50px;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color:  rgb(87, 84, 84);
     height: 6px;
+=======
+    background-color: black;
+    height: 5px;
+    transition: all 2s;
+>>>>>>> parent of 729bcf0... small update
     width: 1200px;
     position: absolute;
     top: 250px   
@@ -296,6 +309,7 @@ body{
 #corda5 {
     
     left: 50px;
+    transition: all 2s;
     border-radius: 5px;
     background-color:  rgb(87, 84, 84);
     height: 7px;
@@ -319,6 +333,7 @@ body{
 #corda6 {
     
     left: 50px;
+    transition: all 2s;
     border-radius: 5px;
     background-color: rgb(87, 84, 84);
     height: 8px;
